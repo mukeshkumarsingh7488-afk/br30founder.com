@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <!-- ✅ Basic -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ SEO -->
+    <title>Trading Analysis | Full Guide - BR30 Trader</title>
+    <meta
+      name="description"
+      content="Complete trading analysis guide by BR30 Trader. Learn technical analysis, price action, market structure, and trading strategies step by step."
+    />
+    <meta
+      name="keywords"
+      content="trading analysis, technical analysis, price action, stock market guide, crypto analysis, BR30 trader"
+    />
+    <meta name="author" content="BR30 Trader" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ✅ Canonical -->
+    <link rel="canonical" href="https://br30trader.com/trading-analysis" />
+
+    <!-- ✅ Favicon -->
+    <link
+      rel="icon"
+      href="https://i.ibb.co/JRJ2Dv9W/BR30-LOGO.jpg"
+      type="image/png"
+    />
+
+    <!-- ✅ Open Graph -->
+    <meta
+      property="og:title"
+      content="Trading Analysis | Full Guide - BR30 Trader"
+    />
+    <meta
+      property="og:description"
+      content="Learn trading analysis like a pro with BR30 Trader. Step-by-step guide."
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/JRJ2Dv9W/BR30-LOGO.jpg"
+    />
+    <meta property="og:url" content="https://br30trader.com/trading-analysis" />
+    <meta property="og:type" content="website" />
+
+    <!-- ✅ Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trading Analysis Guide - BR30 Trader" />
+    <meta
+      name="twitter:description"
+      content="Master trading analysis with expert guidance."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.ibb.co/JRJ2Dv9W/BR30-LOGO.jpg"
+    />
+
+    <!-- ✅ Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- ✅ CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* 1. COLORS & THEME */
+      :root {
+        --bg-color: #0b0118;
+        /* Deep Dark Background */
+        --card-bg: #160a2c;
+        /* Purple Dark Card */
+        --accent-purple: #a020f0;
+        /* Main Purple */
+        --text-white: #ffffff;
+        /* Big Text Color */
+        --text-dim: #b2bec3;
+        /* Secondary Text */
+        --border-color: rgba(160, 32, 240, 0.2);
+      }
+
+      /* 2. RESET & BASE */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-white);
+        line-height: 1.6;
+        padding: 20px;
+        /* Small padding for mobile */
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      /* 1. HOME BUTTON HOVER EFFECT */
+      .btn-home {
+        display: inline-block;
+        padding: 14px 40px;
+        background: var(--accent-purple);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        /* Smooth bounce effect */
+        box-shadow: 0 5px 15px rgba(160, 32, 240, 0.3);
+        border: 2px solid transparent;
+      }
+
+      .btn-home:hover {
+        background: transparent;
+        /* Purple se transparent ho jayega */
+        color: white;
+        border-color: var(--accent-purple);
+        /* Border purple ho jayegi */
+        box-shadow: 0 0 25px rgba(160, 32, 240, 0.6);
+        /* Glowing effect */
+        transform: scale(1.05) translateY(-2px);
+        /* Thoda upar aur bada dikhega */
+      }
+
+      /* 2. BACK BUTTON HOVER (Link style) */
+      .back-btn:hover {
+        color: white;
+        text-shadow: 0 0 10px var(--accent-purple);
+        transform: translateX(-5px);
+        /* Piche ki taraf thoda move hoga */
+        transition: 0.3s ease;
+      }
+
+      /* 3. CARD HOVER (Already in code, but making it better) */
+      .card:hover {
+        border-color: var(--accent-purple);
+        background: rgba(160, 32, 240, 0.12);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      header {
+        margin-bottom: 40px;
+      }
+
+      header h1 {
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+        margin-bottom: 10px;
+      }
+
+      .purple {
+        color: var(--accent-purple);
+      }
+
+      header p {
+        color: var(--text-dim);
+        font-size: 1.1rem;
+      }
+
+      /* 4. SECTION BOXES */
+      .section-box {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        padding: clamp(20px, 4vw, 40px);
+        margin-bottom: 35px;
+      }
+
+      h2 {
+        font-size: clamp(1.4rem, 3vw, 1.8rem);
+        margin-bottom: 25px;
+        color: var(--text-white);
+      }
+
+      /* 5. RESPONSIVE GRID SYSTEM */
+      .grid {
+        display: grid;
+        /* Ye line mobile/desktop handle karti hai */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        padding: 25px;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        border-color: var(--accent-purple);
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .card h3 {
+        color: var(--accent-purple);
+        margin-bottom: 12px;
+        font-size: 1.2rem;
+      }
+
+      .card p {
+        color: var(--text-dim);
+        font-size: 0.95rem;
+      }
+
+      /* 6. INDICATOR LIST (2 Columns on Desktop, 1 on Mobile) */
+      .indicator-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+      }
+
+      .indicator-item {
+        background: rgba(160, 32, 240, 0.1);
+        padding: 15px;
+        border-radius: 12px;
+        border-left: 4px solid var(--accent-purple);
+        font-weight: 500;
+        color: #efefef;
+      }
+
+      /* 7. BADGES */
+      .badge {
+        display: inline-block;
+        padding: 5px 12px;
+        border-radius: 6px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        color: #fff;
+      }
+
+      .badge-purple {
+        background: var(--accent-purple);
+      }
+
+      .badge-cyan {
+        background: #a020f0;
+        color: white;
+      }
+
+      .badge-red {
+        background: #a020f0;
+      }
+
+      /* 8. BUTTONS */
+      .btn-home {
+        display: inline-block;
+        padding: 14px 35px;
+        background: var(--accent-purple);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px rgba(160, 32, 240, 0.3);
+      }
+
+      /* Responsive Adjustments for Desktop */
+      @media (min-width: 768px) {
+        body {
+          padding: 50px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TT7SLZ4L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->\
+
+    <div class="container">
+      <!-- Back Link -->
+      <a href="index.html" class="back-btn">← Back to Home</a>
+
+      <header>
+        <h1>Trading <span class="purple">Analysis</span> Deep Dive 💹</h1>
+        <p>मार्केट को गहराई से समझने के लिए एक कम्प्लीट गाइड।</p>
+      </header>
+
+      <!-- SECTION 1: TYPES -->
+      <section class="section-box">
+        <span class="badge badge-purple">Types of Analysis</span>
+        <h2>Market Analysis के प्रकार</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Fundamental Analysis</h3>
+            <p>
+              कंपनी के बिजनेस मॉडल, बैलेंस शीट और मैनेजमेंट का विश्लेषण। यह
+              Long-term इन्वेस्टिंग के लिए बेस्ट है।
+            </p>
+          </div>
+          <div class="card">
+            <h3>Technical Analysis</h3>
+            <p>
+              प्राइस चार्ट और ऐतिहासिक डेटा का उपयोग करके भविष्य के मूव्स का
+              अंदाजा लगाना। ट्रेडिंग के लिए सबसे जरूरी।
+            </p>
+          </div>
+          <div class="card">
+            <h3>Sentiment Analysis</h3>
+            <p>
+              बाजार के 'डर' (Fear) और 'लालच' (Greed) को समझना। सोशल मीडिया और
+              न्यूज से डेटा लिया जाता है।
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: INDICATORS -->
+      <section class="section-box">
+        <span class="badge badge-cyan">Tools & Indicators</span>
+        <h2>Top 10 Trading Indicators</h2>
+        <div class="indicator-list">
+          <div class="indicator-item">1. RSI (Momentum)</div>
+          <div class="indicator-item">2. Moving Average (EMA 20/50/200)</div>
+          <div class="indicator-item">3. MACD (Trend Reversal)</div>
+          <div class="indicator-item">4. Bollinger Bands (Volatility)</div>
+          <div class="indicator-item">5. VWAP (Intraday Volume)</div>
+          <div class="indicator-item">6. Supertrend (Buy/Sell Signals)</div>
+          <div class="indicator-item">7. Fibonacci (Key Levels)</div>
+          <div class="indicator-item">8. Stochastic (Overbought)</div>
+          <div class="indicator-item">9. ATR (Stop Loss Guide)</div>
+          <div class="indicator-item">10. Volume (Strength)</div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: CANDLESTICKS -->
+      <section class="section-box">
+        <span class="badge badge-purple">Visual Patterns</span>
+        <h2>Candlestick Patterns</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Single Patterns</h3>
+            <p>
+              Hammer, Shooting Star, Inverted Hammer, और Doji। ये तुरंत ट्रेंड
+              पलटने का संकेत देते हैं।
+            </p>
+          </div>
+          <div class="card">
+            <h3>Double Patterns</h3>
+            <p>
+              Bullish/Bearish Engulfing और Piercing Line। दो कैंडल्स के मेल से
+              बनने वाले शक्तिशाली संकेत।
+            </p>
+          </div>
+          <div class="card">
+            <h3>Triple Patterns</h3>
+            <p>
+              Morning Star और Evening Star। ये ट्रेंड कन्फर्मेशन के लिए सबसे
+              भरोसेमंद होते हैं।
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: RISK MANAGEMENT -->
+      <section class="section-box">
+        <span class="badge badge-red">Success Secret</span>
+        <h2>Risk Management & Reward</h2>
+        <div class="grid">
+          <div class="card" style="border-left: 4px solid #ff7675">
+            <h3>1:2 Ratio Rule</h3>
+            <p>
+              अगर आपका नुकसान ₹1000 है, तो प्रॉफिट ₹2000 होना चाहिए। तभी आप
+              प्रॉफिटेबल बनेंगे।
+            </p>
+          </div>
+          <div class="card" style="border-left: 4px solid #ff7675">
+            <h3>Position Sizing</h3>
+            <p>
+              कभी भी एक ट्रेड में अपनी पूरी कैपिटल का 2% से ज्यादा रिस्क न लें।
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Button -->
+      <div style="text-align: center; margin-top: 40px; padding-bottom: 40px">
+        <a href="index.html" class="btn-home">Back to Home</a>
+      </div>
+    </div>
+    <script src="js/security.js"></script>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ✅ Basic -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ SEO -->
+    <title>Web Services | Build Your Digital Presence - BR30 Founder</title>
+    <meta
+      name="description"
+      content="Get professional web development services by Mukesh Raj. Build your digital presence with modern websites, fast performance, and SEO optimization."
+    />
+    <meta
+      name="keywords"
+      content="web development services, website design india, digital presence, portfolio website, business website, BR30 Founder"
+    />
+    <meta name="author" content="Mukesh Raj" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ✅ Canonical -->
+    <link rel="canonical" href="https://br30founder.com/web-services" />
+
+    <!-- ✅ Favicon -->
+    <link
+      rel="icon"
+      href="https://i.ibb.co/JRJ2Dv9W/BR30-LOGO.jpg"
+      type="image/png"
+    />
+
+    <!-- ✅ Open Graph -->
+    <meta property="og:title" content="Web Services | BR30 Founder" />
+    <meta
+      property="og:description"
+      content="Build your digital presence with expert web development by Mukesh Raj."
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/JRJ2Dv9W/BR30-LOGO.jpg"
+    />
+    <meta property="og:url" content="https://br30founder.com/web-services" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BR30 Founder" />
+
+    <!-- ✅ Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Web Development Services - BR30 Founder"
+    />
+    <meta
+      name="twitter:description"
+      content="Professional website development for your business."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.ibb.co/JRJ2Dv9W/BR30-LOGO.jpg"
+    />
+
+    <!-- ✅ Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- ✅ CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* 1. BRAND COLORS & RESET */
+      :root {
+        --bg-color: #0b0118;
+        /* Deep Dark */
+        --card-bg: #160a2c;
+        /* Purple Dark Card */
+        --accent-purple: #a020f0;
+        /* BRAND PURPLE */
+        --text-white: #ffffff;
+        /* Big Text */
+        --text-dim: #b2bec3;
+        /* Dim Text */
+        --border-color: rgba(160, 32, 240, 0.2);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: var(--bg-color);
+        color: var(--text-white);
+        line-height: 1.7;
+        padding: 20px;
+        /* Mobile friendly padding */
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* 2. NAVIGATION (Back Link) */
+      .back-link {
+        text-decoration: none;
+        color: var(--accent-purple);
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 25px;
+        transition: 0.3s ease;
+      }
+
+      .back-link:hover {
+        color: white;
+        text-shadow: 0 0 10px var(--accent-purple);
+        transform: translateX(-5px);
+      }
+
+      /* 3. HEADER */
+      .header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .header h1 {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+        color: #fff;
+      }
+
+      .header h1 span {
+        color: var(--accent-purple);
+      }
+
+      .line {
+        width: 60px;
+        height: 4px;
+        background: var(--accent-purple);
+        margin: 15px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--accent-purple);
+      }
+
+      /* 4. MAIN CARD (Responsive) */
+      .service-card {
+        background: var(--card-bg);
+        padding: clamp(25px, 5vw, 45px);
+        border-radius: 24px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      }
+
+      .service-card h2 {
+        color: var(--accent-purple);
+        margin-bottom: 20px;
+        font-size: clamp(1.3rem, 3vw, 1.6rem);
+      }
+
+      .service-card p {
+        color: var(--text-dim);
+        margin-bottom: 25px;
+        font-size: 1rem;
+      }
+
+      /* 5. FEATURE BOX (Purple Theme) */
+      .feature-box {
+        background: rgba(160, 32, 240, 0.05);
+        padding: 25px;
+        border-radius: 15px;
+        margin: 35px 0;
+        border-left: 5px solid var(--accent-purple);
+        border-right: 1px solid var(--border-color);
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .feature-box h3 {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        color: var(--text-white);
+      }
+
+      .feature-box ul {
+        list-style: none;
+      }
+
+      .feature-box ul li {
+        margin-bottom: 12px;
+        padding-left: 30px;
+        position: relative;
+        color: #efefef;
+        font-size: 0.95rem;
+      }
+
+      .feature-box ul li::before {
+        content: "🚀";
+        position: absolute;
+        left: 0;
+        filter: drop-shadow(0 0 5px var(--accent-purple));
+      }
+
+      /* 6. CALL TO ACTION (THE BUTTON STYLE YOU WANTED) */
+      .cta-box {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .contact-btn {
+        text-decoration: none;
+        background: var(--accent-purple);
+        color: #fff;
+        padding: 16px 45px;
+        border-radius: 12px;
+        /* Pehle wala shape */
+        font-weight: 700;
+        display: inline-block;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 10px 20px rgba(160, 32, 240, 0.2);
+        border: 2px solid transparent;
+      }
+
+      .contact-btn:hover {
+        background: transparent !important;
+        color: white !important;
+        border-color: var(--accent-purple) !important;
+        box-shadow: 0 0 25px rgba(160, 32, 240, 0.6) !important;
+        transform: scale(1.05) translateY(-3px) !important;
+      }
+
+      /* Desktop specific padding */
+      @media (min-width: 768px) {
+        body {
+          padding: 50px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TT7SLZ4L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+
+      <header class="header">
+        <h1>Building Your <span>Digital Presence</span></h1>
+        <div class="line"></div>
+      </header>
+
+      <main class="service-card">
+        <h2>Modern Web Solutions</h2>
+        <p>
+          In today's digital era, your website is the face of your business. We
+          specialize in creating high-performance, visually stunning, and highly
+          functional websites tailored to your specific needs.
+        </p>
+
+        <div class="feature-box">
+          <h3>Our Core Web Expertise:</h3>
+          <ul>
+            <li>Custom Responsive Design (Desktop, Tablet, Mobile).</li>
+            <li>Advanced Trading Dashboards & Admin Panels.</li>
+            <li>E-commerce Solutions with Secure Payments.</li>
+            <li>SEO Optimized Structure for Google Ranking.</li>
+            <li>Blazing Fast Loading Speeds & Performance.</li>
+            <li>Modern UI/UX with Smooth Interactivity.</li>
+          </ul>
+        </div>
+
+        <p>
+          Whether you are a professional trader or a business owner, we have the
+          right tools to bring your vision to life. Let’s collaborate to build
+          something extraordinary.
+        </p>
+
+        <div class="cta-box">
+          <a href="mailto:br30service.contact@gmail.com" class="contact-btn"
+            >Get a Free Quotation</a
+          >
+        </div>
+      </main>
+    </div>
+    <script src="js/security.js"></script>
+  </body>
+</html>
