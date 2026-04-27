@@ -84,42 +84,38 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // stack card
-document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll(".stack-cards__item");
-  const stackGap = 30; // Har card ke beech ka gap
+gsap.registerPlugin(ScrollTrigger);
 
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: [0, 1],
-  };
+const cards = gsap.utils.toArray(".stack-cards__item");
+const headerOffset = 100; // Navbar ki height ke hisab se jagah
+const stackGap = 30; // Har card ke beech ka gap jo stack hone pe dikhega
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Jab card screen mein aaye
-        updateStacking();
-      }
-    });
-  }, observerOptions);
+cards.forEach((card, index) => {
+  // Main Pinning Logic
+  ScrollTrigger.create({
+    trigger: card,
+    start: `top-=${headerOffset + index * stackGap} top`, // Har card thoda niche rukega
+    endTrigger: "#stack-cards",
+    end: "bottom top",
+    pin: true,
+    pinSpacing: false, // Isse cards ek ke upar ek chadh jayenge
+    id: `card-${index}`,
+    // markers: true, // Testing ke liye ise on kar sakte ho check karne ke liye
+  });
 
-  cards.forEach((card) => observer.observe(card));
-
-  function updateStacking() {
-    const scrollTop = window.pageYOffset;
-
-    cards.forEach((card, index) => {
-      const cardTop = card.parentElement.offsetTop + card.offsetTop;
-      const distance = scrollTop - cardTop + 100; // 100 navbar offset hai
-
-      if (distance > index * stackGap) {
-        // Card ko stack position mein 'transform' se lock karna
-        card.style.transform = `translateY(${distance - index * stackGap}px)`;
-      } else {
-        card.style.transform = `translateY(0px)`;
-      }
+  // Scale aur Fade effect jab card "piche" jaye (Overlay effect)
+  // Jab naya card upar aaye, toh purana card thoda scale down hoga
+  if (index < cards.length - 1) {
+    gsap.to(card, {
+      scrollTrigger: {
+        trigger: cards[index + 1], // Agla card trigger karega is animation ko
+        start: `top-=${headerOffset + cards.length * stackGap} top`,
+        end: `top-=${headerOffset} top`,
+        scrub: true,
+      },
+      scale: 0.9, // Pichla card thoda chhota ho jayega
+      opacity: 0.8, // Pichla card thoda dhundhla ho jayega
+      transformOrigin: "top center",
     });
   }
-
-  window.addEventListener("scroll", updateStacking);
 });

@@ -95,6 +95,12 @@
   <!-- ✅ SweetAlert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 
+  <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
   <!-- ✅ CSS -->
   <link rel="stylesheet" href="style.css">
 
@@ -1043,6 +1049,9 @@
     <!-- ==========================================
        19. SCRIPTS & CLOSING TAGS
        ========================================== -->
+       <script>
+  gsap.registerPlugin(ScrollTrigger);
+</script>
     <script src="js/script.js"></script>
         <script src="js/security.js"></script>
   </body>
