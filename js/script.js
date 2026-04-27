@@ -87,14 +87,19 @@ document.addEventListener("DOMContentLoaded", () => {
 const cards = document.querySelectorAll(".card");
 
 window.addEventListener("scroll", () => {
-  let scroll = window.scrollY;
+  const scroll = window.scrollY;
+  const vh = window.innerHeight;
 
-  cards.forEach((card, index) => {
-    let offset = index * window.innerHeight;
-    let diff = scroll - offset;
+  cards.forEach((card, i) => {
+    const start = i * vh;
+    const end = start + vh;
 
-    if (diff > 0) {
-      card.style.transform = `translateY(${Math.min(diff, window.innerHeight)}px)`;
+    if (scroll >= start && scroll < end) {
+      card.style.transform = `translateY(${scroll - start}px)`;
+    } else if (scroll >= end) {
+      card.style.transform = `translateY(${vh}px)`;
+    } else {
+      card.style.transform = `translateY(0px)`;
     }
   });
 });

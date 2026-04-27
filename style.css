@@ -1348,9 +1348,14 @@ h3 {
 
 /* SECTION (scroll space create karta hai) */
 .cards-section {
-  height: 600vh; /* 👈 ye game changer hai */
+  height: 500vh; /* 6 cards = 100vh * (cards - 1) */
 }
-
+html {
+  scroll-behavior: smooth;
+}
+.card {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
 /* STICKY WRAPPER */
 .cards-wrapper {
   position: sticky;
