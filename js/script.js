@@ -84,22 +84,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // stacky card logic
-const cards = document.querySelectorAll(".card");
-
-window.addEventListener("scroll", () => {
-  const scroll = window.scrollY;
-  const vh = window.innerHeight;
-
-  cards.forEach((card, i) => {
-    const start = i * vh;
-    const end = start + vh;
-
-    if (scroll >= start && scroll < end) {
-      card.style.transform = `translateY(${scroll - start}px)`;
-    } else if (scroll >= end) {
-      card.style.transform = `translateY(${vh}px)`;
-    } else {
-      card.style.transform = `translateY(0px)`;
-    }
-  });
-});
