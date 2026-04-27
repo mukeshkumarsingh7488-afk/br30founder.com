@@ -86,19 +86,25 @@ document.addEventListener("DOMContentLoaded", () => {
 // stack card
 window.addEventListener("scroll", () => {
   const cards = document.querySelectorAll(".stack-cards__item");
-  const scrollValue = window.scrollY;
+  const scrollPos = window.scrollY;
+  const triggerPoint = 100; // Screen ke top se kitni door card rukega
 
   cards.forEach((card, index) => {
-    const cardTop = card.offsetTop;
-    const stickyPoint = 100 + index * 30; // Cards ke beech ka stack gap
+    const parent = card.parentElement;
+    const cardInitialTop = parent.offsetTop + card.offsetTop;
+    const offset = index * 35; // Har card ke beech ka stacking gap
 
-    if (scrollValue >= cardTop - stickyPoint) {
+    if (scrollPos > cardInitialTop - triggerPoint - offset) {
+      // Jab scroll card tak pahuche, card ko fix kar do
       card.style.position = "fixed";
-      card.style.top = stickyPoint + "px";
+      card.style.top = triggerPoint + offset + "px";
       card.style.zIndex = index;
+      card.style.width = parent.offsetWidth * 0.94 + "px"; // Width maintain rakhne ke liye
     } else {
+      // Wapas apni purani jagah par
       card.style.position = "relative";
       card.style.top = "0";
+      card.style.width = "94%";
     }
   });
 });
