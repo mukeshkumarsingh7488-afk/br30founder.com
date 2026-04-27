@@ -84,16 +84,21 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // stack card
-const stackCards = document.querySelectorAll(".stack-cards__item");
-
 window.addEventListener("scroll", () => {
-  stackCards.forEach((card, index) => {
-    const rect = card.getBoundingClientRect();
-    const isStuck = rect.top <= (index + 1) * 20; // 20px gap check
+  const cards = document.querySelectorAll(".stack-cards__item");
+  const scrollValue = window.scrollY;
 
-    if (isStuck) {
-      // Yahan aap scale ya opacity change kar sakte ho
-      // Example: card.style.transform = `scale(${1 - index * 0.05})`;
+  cards.forEach((card, index) => {
+    const cardTop = card.offsetTop;
+    const stickyPoint = 100 + index * 30; // Cards ke beech ka stack gap
+
+    if (scrollValue >= cardTop - stickyPoint) {
+      card.style.position = "fixed";
+      card.style.top = stickyPoint + "px";
+      card.style.zIndex = index;
+    } else {
+      card.style.position = "relative";
+      card.style.top = "0";
     }
   });
 });

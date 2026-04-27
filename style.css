@@ -1358,16 +1358,18 @@ h3 {
 #stack-cards {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--card-margin);
-  padding-bottom: 20vh; /* Niche thodi jagah scroll ke liye */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh; /* Cards ke beech ka gap */
+  padding-bottom: 20vh;
 }
 
 .stack-cards__item {
-  position: sticky;
-  top: 0;
-  padding-top: calc(var(--index) * var(--card-top-offset)); /* Dynamic stacking */
+  position: relative; /* Sticky ki jagah relative */
+  width: 95%;
+  max-width: 1000px;
+  transition: transform 0.1s linear;
 }
 
 /* Har card ka stacking level (Z-index) */
@@ -1379,14 +1381,14 @@ h3 {
 .stack-cards__item:nth-child(6) { --index: 6; }
 
 .card__content {
-  background: #1a1a1a; /* Trading dark theme */
+  background: #1a1a1a;
   color: white;
   border: 1px solid #333;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   height: var(--card-height);
-  box-shadow: 0 -20px 30px -10px rgba(0,0,0,0.5); /* Shading effect */
+  box-shadow: 0 -20px 30px -10px rgba(0,0,0,0.5);
 }
 
 .card__content > div {
