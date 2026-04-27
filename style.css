@@ -1464,126 +1464,110 @@ section, main, .wrapper {
    RAZORPAY STYLE SUB-GRID & HOVER ANIMATION (4-4 BOXES)
    ============================================================ */
 
-/* 1. Content Area Setup */
-.main-content-area {
-  flex: 1.3; /* Text area grid ke liye bada rakha hai */
-  padding: 45px;
+/* ============================================================
+   FINAL RAZORPAY HORIZONTAL LAYOUT (4 BOXES IN ONE LINE)
+   ============================================================ */
+
+/* 1. Main Card Container Adjustment */
+.main-content-area.horizontal-layout {
+  flex: 1;
+  width: 100%;
+  padding: 50px 40px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* Heading left mein rakhne ke liye */
 }
 
 .card-header h2 {
-  font-size: 2.4rem;
-  color: #00ff88; /* Bullish Green */
-  margin-bottom: 8px;
+  font-size: 2.5rem;
+  color: #00ff88;
+  margin-bottom: 10px;
 }
 
 .card-header p {
   color: #8b949e;
-  font-size: 1rem;
-  margin-bottom: 25px;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
 }
 
-/* 2. Razorpay Grid (2x2) */
-.sub-card-grid {
+/* 2. 4-Box Horizontal Grid */
+.sub-card-grid-horizontal {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns ek line mein */
+  gap: 20px;
+  width: 100%;
 }
 
 .sub-box {
-  background: rgba(255, 255, 255, 0.03); /* Light dark background */
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 18px;
+  background: #161b22; /* Razorpay style dark gray */
+  border: 1px solid #30363d;
+  border-radius: 20px;
+  padding: 20px;
   position: relative;
-  overflow: hidden; /* Button slide-up ke liye zaroori */
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  overflow: hidden;
+  height: 320px; /* Sab boxes ki height barabar rakhne ke liye */
+  transition: border-color 0.3s ease, background 0.3s ease; /* No Shaking (No Transform) */
 }
 
-/* Hover par Border aur Glow effect */
+/* Hover par sirf chamak (border) aayegi, hilega nahi */
 .sub-box:hover {
-  background: rgba(0, 255, 136, 0.05);
   border-color: #00ff88;
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 255, 136, 0.02);
 }
 
-/* 3. Icons Style */
-.sub-icon {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 12px;
-  display: block;
+/* 3. Sub-box Image/Logo Style */
+.box-image {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-/* 4. Box Text Animation */
-.box-content {
-  transition: transform 0.4s ease;
-}
-
-.sub-box:hover .box-content {
-  transform: translateY(-20px); /* Hover par text thoda upar move hoga */
-}
-
-.box-content h4 {
-  color: #fff;
-  margin-bottom: 4px;
-  font-size: 1.05rem;
-}
-
-.box-content p {
-  color: #8b949e;
-  font-size: 0.8rem;
-  line-height: 1.4;
-}
-
-/* 5. RAZORPAY SLIDE-UP BUTTON (Main Magic) */
-.hover-btn {
-  position: absolute;
-  bottom: -40px; /* Shuruat mein niche chhupa rahega */
-  left: 18px;
-  color: #00ff88;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.85rem;
-  transition: all 0.4s ease;
-  opacity: 0;
-}
-
-.sub-box:hover .hover-btn {
-  bottom: 15px; /* Hover par upar aa jayega */
-  opacity: 1;
-}
-
-/* 6. Figure (Image) Adjustment */
-.card__content figure {
-  flex: 0.7;
-  margin: 0;
-}
-
-.card__content figure img {
+.box-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* 7. Mobile Responsive */
-@media (max-width: 991px) {
-  .card__content { 
-    flex-direction: column; 
-    height: auto; 
-  }
-  .sub-card-grid { 
-    grid-template-columns: repeat(2, 1fr); 
-  }
+/* 4. Text Style */
+.box-content h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
 }
 
-@media (max-width: 600px) {
-  .sub-card-grid { 
-    grid-template-columns: 1fr; /* Mobile par line se ek box */
-  }
-  .main-content-area {
-    padding: 25px;
-  }
+.box-content p {
+  color: #8b949e;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* 5. SLIDE-UP BUTTON (Pyara Link Animation) */
+.hover-btn-link {
+  position: absolute;
+  bottom: -40px; /* Shuruat mein niche chhupa rahega */
+  left: 20px;
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+
+.sub-box:hover .hover-btn-link {
+  bottom: 20px; /* Hover par pyara sa slide-up */
+  opacity: 1;
+}
+
+/* 6. Mobile Responsiveness */
+@media (max-width: 1100px) {
+  .sub-card-grid-horizontal { grid-template-columns: repeat(2, 1fr); }
+  .card__content { height: auto; }
+}
+
+@media (max-width: 650px) {
+  .sub-card-grid-horizontal { grid-template-columns: 1fr; }
+  .main-content-area.horizontal-layout { padding: 30px 20px; }
 }
