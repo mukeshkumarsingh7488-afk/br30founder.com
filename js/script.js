@@ -90,17 +90,14 @@ const cards = gsap.utils.toArray(".stack-cards__item");
 const headerOffset = 100;
 
 cards.forEach((card, index) => {
-  const isLast = index === cards.length - 1;
-
   ScrollTrigger.create({
     trigger: card,
     start: `top-=${headerOffset} top`,
     endTrigger: "#stack-cards",
     end: "bottom bottom",
     pin: true,
-    // Sirf last card par spacing rakhenge taaki "flip-section" door rahe
-    pinSpacing: isLast ? true : false,
-    scrub: 1, // Smooth scrolling ke liye
+    pinSpacing: false,
+    scrub: 1,
     anticipatePin: 1,
   });
 
@@ -114,6 +111,9 @@ cards.forEach((card, index) => {
       },
       opacity: 0,
       scale: 0.98,
+      ease: "none",
     });
   }
 });
+
+ScrollTrigger.refresh();

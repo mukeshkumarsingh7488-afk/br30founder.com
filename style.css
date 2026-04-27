@@ -553,17 +553,18 @@ section {
    8. HIGHLIGHTS & FLIP CARDS (Responsive Fix)
    ========================================= */
 .flip-section {
-    position: relative;
-      z-index: 5; 
-  padding-top: 150px !important; 
+     position: relative !important;
+   z-index: 20 !important; 
+  padding-top: 60px !important; 
   padding: 60px 5%;
+  margin-top: 0 !important;
   text-align: center;
   background-color: #0f172a;
 }
 
 .flip-section h2 {
   margin-top: 50px !important;
-  margin-bottom: 40px;
+  padding-top: 0 !important;
 }
 .flip-grid {
   display: grid;
@@ -1376,14 +1377,14 @@ h3 {
    ============================================================ */
 :root {
   --card-height: 550px; 
-  --header-height: 100px; /* Navbar gap */
+  --header-height: 100px; 
 }
 
 /* 1. Main Container */
 #stack-cards {
   list-style: none;
-  padding: 0;
-  margin: 0 auto 120px auto; /* Niche wale section se gap */
+   padding-bottom: 0 !important;
+  margin-bottom: 40px !important;  
   display: flex;
   flex-direction: column;
   align-items: center;
