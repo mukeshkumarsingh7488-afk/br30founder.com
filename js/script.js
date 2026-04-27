@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
 gsap.registerPlugin(ScrollTrigger);
 
 const cards = gsap.utils.toArray(".stack-cards__item");
-const stackGap = 35;
 const headerOffset = 100;
 
 cards.forEach((card, index) => {
@@ -95,29 +94,27 @@ cards.forEach((card, index) => {
 
   ScrollTrigger.create({
     trigger: card,
-    start: `top-=${headerOffset + index * stackGap} top`,
-    // Agar aakhiri card hai toh pinSpacing true rakhein
+    start: `top-=${headerOffset} top`,
+    // Jab tak poora #stack-cards section scroll na ho jaye, tab tak pin rakho
     endTrigger: "#stack-cards",
     end: "bottom bottom",
     pin: true,
-    pinSpacing: isLast ? true : false, // Sirf last card spacing chhoddhega
+    // Sirf last card par spacing true rakhenge taaki niche wala content door rahe
+    pinSpacing: isLast ? true : false,
     scrub: true,
-    onEnter: () => card.classList.add("is-stacked"),
-    onLeaveBack: () => card.classList.remove("is-stacked"),
   });
 
-  // Fade effect for previous cards
+  // Peeche wale cards ko gayab karne ke liye (taaki text na dikhe)
   if (index < cards.length - 1) {
     gsap.to(card, {
       scrollTrigger: {
         trigger: cards[index + 1],
-        start: `top-=${headerOffset + 200} top`,
+        start: `top-=${headerOffset + 150} top`,
         end: `top-=${headerOffset} top`,
         scrub: true,
       },
+      opacity: 0,
       scale: 0.95,
-      opacity: 0.5, // Parchai kam dikhne ke liye opacity thodi kam
-      transformOrigin: "top center",
     });
   }
 });
