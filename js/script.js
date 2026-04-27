@@ -87,46 +87,37 @@ document.addEventListener("DOMContentLoaded", () => {
 gsap.registerPlugin(ScrollTrigger);
 
 const cards = gsap.utils.toArray(".stack-cards__item");
-const headerOffset = 100; // Navbar gap
-const stackGap = 30; // Stacking offset
+const stackGap = 35;
+const headerOffset = 100;
 
 cards.forEach((card, index) => {
+  const isLast = index === cards.length - 1;
+
   ScrollTrigger.create({
     trigger: card,
-    start: `top-=${100 + index * 35} top`,
-    // Is line ko change karein:
+    start: `top-=${headerOffset + index * stackGap} top`,
+    // Agar aakhiri card hai toh pinSpacing true rakhein
     endTrigger: "#stack-cards",
-    end: "bottom 100%", // Jab section ka bottom screen ke bottom par ho tab release kare
+    end: "bottom bottom",
     pin: true,
-    pinSpacing: false,
+    pinSpacing: isLast ? true : false, // Sirf last card spacing chhoddhega
     scrub: true,
+    onEnter: () => card.classList.add("is-stacked"),
+    onLeaveBack: () => card.classList.remove("is-stacked"),
   });
 
-  // Scale effect: Jab naya card aaye, purana wala thoda piche jaye
+  // Fade effect for previous cards
   if (index < cards.length - 1) {
     gsap.to(card, {
       scrollTrigger: {
         trigger: cards[index + 1],
-        start: `top-=${headerOffset + index * stackGap + 200} top`,
-        end: `top-=${headerOffset + (index + 1) * stackGap} top`,
+        start: `top-=${headerOffset + 200} top`,
+        end: `top-=${headerOffset} top`,
         scrub: true,
       },
       scale: 0.95,
-      opacity: 0.7,
+      opacity: 0.5, // Parchai kam dikhne ke liye opacity thodi kam
       transformOrigin: "top center",
     });
   }
-});
-
-// SABSE IMPORTANT: Niche wale content ko dhakka dene ke liye
-// Hum section ke aakhiri mein thodi space add karenge taaki cards stack hone ke baad upar move karein
-ScrollTrigger.create({
-  trigger: "#stack-cards",
-  start: "bottom bottom",
-  end: "bottom top",
-  pin: false, // Yahan pin nahi karna hai
-  onEnter: () => {
-    // Jab stack khatam ho jaye, cards ko normal scroll hone do
-    gsap.set("#stack-cards", { pointerEvents: "auto" });
-  },
 });
