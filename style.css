@@ -664,8 +664,21 @@ section {
   display: flex;
   gap: 30px;
   padding: 60px 0;
-  width: max-content;
-  animation: teamScroll 20s linear infinite;
+   width: max-content !important;
+  animation: seamlessLoop 30s linear infinite !important;
+}
+@keyframes seamlessLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+/* Hover par rokne ke liye */
+.scroll-container:hover .scroll-track {
+  animation-play-state: paused;
 }
 
 .scroll-container:hover .scroll-track {
@@ -740,10 +753,12 @@ section {
 /* CO-FOUNDER TEXT (Small Letters & New Highlight Color) */
 .name-tag p {
   color: #00f2ff; 
-  font-size: 12px;
+  font-size: 8px !important;
   text-transform: lowercase; 
-  font-weight: 600;
+    font-weight: 400; 
   letter-spacing: 1px;
+   margin-top: 4px !important;
+    line-height: 1.2; 
 }
 
 .team-heading h2,
@@ -1356,53 +1371,40 @@ h3 {
 
 
 
+/* ============================================================
+   CLEAN & FINAL STACK CARDS CSS
+   ============================================================ */
 :root {
   --card-height: 550px; 
-  --card-top-offset: 20px; 
-  --header-height: 80px; 
+  --header-height: 100px; /* Navbar gap */
 }
 
+/* 1. Main Container */
 #stack-cards {
-   margin-bottom: 120px !important; 
-     padding-bottom: 50px !important;
-  padding: 0;
-  margin: 0;
   list-style: none;
+  padding: 0;
+  margin: 0 auto 120px auto; /* Niche wale section se gap */
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-   z-index: 10;
+  z-index: 10;
+  width: 100%;
 }
 
-.next-section {
-  position: relative !important;
-  z-index: 10 !important; 
-  background: #0d1117 !important; 
-  padding-top: 100px !important; 
-}
-.stack-cards__item.is-stacked {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
+/* 2. Individual Card Item */
 .stack-cards__item {
   width: 94%;
   max-width: 1200px;
-  height: 550px;
+  height: var(--card-height);
   position: relative;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
   border-radius: 32px;
   background: #1a1a1a;
   margin-bottom: 20px;
+  will-change: transform; /* Performance optimization */
 }
 
-/* Har card ki stacking position (Upar aane par kahan rukega) */
-.stack-cards__item:nth-child(1) { top: calc(var(--header-height) + 10px); }
-.stack-cards__item:nth-child(2) { top: calc(var(--header-height) + 40px); }
-.stack-cards__item:nth-child(3) { top: calc(var(--header-height) + 70px); }
-.stack-cards__item:nth-child(4) { top: calc(var(--header-height) + 100px); }
-.stack-cards__item:nth-child(5) { top: calc(var(--header-height) + 130px); }
-.stack-cards__item:nth-child(6) { top: calc(var(--header-height) + 160px); }
-
+/* 3. Card Inner Content Area */
 .card__content {
   background: #0d1117 !important; 
   border: 1px solid #30363d;
@@ -1412,70 +1414,16 @@ h3 {
   width: 100%;
   overflow: hidden;
   box-shadow: 0 -20px 40px rgba(0,0,0,0.8);
-  transition: transform 0.3s ease;
 }
 
-.stack-cards__item:hover .card__content {
-  transform: scale(1.01);
-}
-
-.card__content > div {
-  padding: 60px; 
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.card__content h2 { 
-  font-size: 2.8rem; 
-  color: #00ff88; 
-  margin-bottom: 20px;
-}
-
-.card__content p {
-  font-size: 1.2rem;
-  color: #8b949e;
-  line-height: 1.6;
-}
-
-.card__content figure {
-  flex: 1.2;
-  margin: 0;
-}
-
-.card__content img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .card__content { flex-direction: column; height: auto; min-height: 550px; }
-  .stack-cards__item { height: auto; margin-bottom: 30px; }
-  .card__content > div { padding: 30px; }
-}
-section, main, .wrapper { 
-  overflow: visible !important; 
-}
-
-/* ============================================================
-   RAZORPAY STYLE SUB-GRID & HOVER ANIMATION (4-4 BOXES)
-   ============================================================ */
-
-/* ============================================================
-   FINAL RAZORPAY HORIZONTAL LAYOUT (4 BOXES IN ONE LINE)
-   ============================================================ */
-
-/* 1. Main Card Container Adjustment */
+/* 4. Horizontal Grid Layout (Main Content) */
 .main-content-area.horizontal-layout {
   flex: 1;
   width: 100%;
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Heading left mein rakhne ke liye */
+  align-items: flex-start;
 }
 
 .card-header h2 {
@@ -1490,35 +1438,33 @@ section, main, .wrapper {
   margin-bottom: 30px;
 }
 
-/* 2. 4-Box Horizontal Grid */
+/* 5. Sub-Grid (4 boxes) */
 .sub-card-grid-horizontal {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns ek line mein */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   width: 100%;
 }
 
 .sub-box {
-  background: #161b22; /* Razorpay style dark gray */
+  background: #161b22;
   border: 1px solid #30363d;
   border-radius: 20px;
   padding: 20px;
   position: relative;
   overflow: hidden;
-  height: 320px; /* Sab boxes ki height barabar rakhne ke liye */
-  transition: border-color 0.3s ease, background 0.3s ease; /* No Shaking (No Transform) */
+  height: 310px; 
+  transition: border-color 0.3s ease; /* No Shaking */
 }
 
-/* Hover par sirf chamak (border) aayegi, hilega nahi */
 .sub-box:hover {
   border-color: #00ff88;
-  background: rgba(0, 255, 136, 0.02);
 }
 
-/* 3. Sub-box Image/Logo Style */
+/* 6. Sub-box Image/Logo */
 .box-image {
   width: 100%;
-  height: 120px;
+  height: 110px;
   margin-bottom: 15px;
   border-radius: 12px;
   overflow: hidden;
@@ -1530,7 +1476,6 @@ section, main, .wrapper {
   object-fit: cover;
 }
 
-/* 4. Text Style */
 .box-content h4 {
   color: #fff;
   font-size: 1.1rem;
@@ -1543,10 +1488,10 @@ section, main, .wrapper {
   line-height: 1.4;
 }
 
-/* 5. SLIDE-UP BUTTON (Pyara Link Animation) */
+/* 7. Slide-Up Button (Learn More) */
 .hover-btn-link {
   position: absolute;
-  bottom: -40px; /* Shuruat mein niche chhupa rahega */
+  bottom: -40px; 
   left: 20px;
   color: #00ff88;
   text-decoration: none;
@@ -1557,17 +1502,39 @@ section, main, .wrapper {
 }
 
 .sub-box:hover .hover-btn-link {
-  bottom: 20px; /* Hover par pyara sa slide-up */
+  bottom: 20px; 
   opacity: 1;
 }
 
-/* 6. Mobile Responsiveness */
-@media (max-width: 1100px) {
-  .sub-card-grid-horizontal { grid-template-columns: repeat(2, 1fr); }
-  .card__content { height: auto; }
+/* 8. Next Section Spacing (Meet Founder etc) */
+.next-section {
+  position: relative !important;
+  z-index: 20 !important; 
+  background: #0d1117 !important; 
+  padding-top: 100px !important; 
 }
 
-@media (max-width: 650px) {
-  .sub-card-grid-horizontal { grid-template-columns: 1fr; }
+/* 9. Mobile Responsiveness */
+@media (max-width: 1100px) {
+  .sub-card-grid-horizontal { grid-template-columns: repeat(2, 1fr); }
+  .stack-cards__item { height: auto; }
+}
+
+@media (max-width: 768px) {
+  .stack-cards__item { 
+    height: auto; 
+    margin-bottom: 30px; 
+    width: 90%;
+  }
+  .card__content { flex-direction: column; }
   .main-content-area.horizontal-layout { padding: 30px 20px; }
+}
+
+@media (max-width: 600px) {
+  .sub-card-grid-horizontal { grid-template-columns: 1fr; }
+}
+
+/* Fix for Sticky Conflict */
+section, main, .wrapper { 
+  overflow: visible !important; 
 }
