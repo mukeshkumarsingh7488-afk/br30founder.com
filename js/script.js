@@ -82,25 +82,3 @@ document.addEventListener("DOMContentLoaded", () => {
     if (navLinks) navLinks.classList.remove("show");
   });
 });
-
-// stacky card logic
-const cards = document.querySelectorAll(".js-stack-cards__item");
-
-window.addEventListener("scroll", () => {
-  let scrollTop = window.scrollY;
-
-  cards.forEach((card, i) => {
-    let offsetTop = card.offsetTop;
-    let height = card.offsetHeight;
-
-    let diff = scrollTop - offsetTop;
-
-    if (diff > 0) {
-      let scale = Math.max(0.8, 1 - diff / 1000);
-      card.style.transform = `scale(${scale}) translateY(${diff * 0.2}px)`;
-      card.style.zIndex = cards.length - i;
-    } else {
-      card.style.transform = "scale(1) translateY(0)";
-    }
-  });
-});
