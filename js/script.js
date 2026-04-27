@@ -87,35 +87,46 @@ document.addEventListener("DOMContentLoaded", () => {
 gsap.registerPlugin(ScrollTrigger);
 
 const cards = gsap.utils.toArray(".stack-cards__item");
-const headerOffset = 100; // Navbar ki height ke hisab se jagah
-const stackGap = 30; // Har card ke beech ka gap jo stack hone pe dikhega
+const headerOffset = 100; // Navbar gap
+const stackGap = 30; // Stacking offset
 
 cards.forEach((card, index) => {
-  // Main Pinning Logic
   ScrollTrigger.create({
     trigger: card,
-    start: `top-=${headerOffset + index * stackGap} top`, // Har card thoda niche rukega
+    start: `top-=${headerOffset + index * stackGap} top`,
+    // Jab tak aakhiri card na aa jaye, tab tak pin rakho
     endTrigger: "#stack-cards",
-    end: "bottom top",
+    end: "bottom bottom",
     pin: true,
-    pinSpacing: false, // Isse cards ek ke upar ek chadh jayenge
-    id: `card-${index}`,
-    // markers: true, // Testing ke liye ise on kar sakte ho check karne ke liye
+    pinSpacing: false, // Stack banane ke liye false zaroori hai
+    scrub: true,
   });
 
-  // Scale aur Fade effect jab card "piche" jaye (Overlay effect)
-  // Jab naya card upar aaye, toh purana card thoda scale down hoga
+  // Scale effect: Jab naya card aaye, purana wala thoda piche jaye
   if (index < cards.length - 1) {
     gsap.to(card, {
       scrollTrigger: {
-        trigger: cards[index + 1], // Agla card trigger karega is animation ko
-        start: `top-=${headerOffset + cards.length * stackGap} top`,
-        end: `top-=${headerOffset} top`,
+        trigger: cards[index + 1],
+        start: `top-=${headerOffset + index * stackGap + 200} top`,
+        end: `top-=${headerOffset + (index + 1) * stackGap} top`,
         scrub: true,
       },
-      scale: 0.9, // Pichla card thoda chhota ho jayega
-      opacity: 0.8, // Pichla card thoda dhundhla ho jayega
+      scale: 0.95,
+      opacity: 0.7,
       transformOrigin: "top center",
     });
   }
+});
+
+// SABSE IMPORTANT: Niche wale content ko dhakka dene ke liye
+// Hum section ke aakhiri mein thodi space add karenge taaki cards stack hone ke baad upar move karein
+ScrollTrigger.create({
+  trigger: "#stack-cards",
+  start: "bottom bottom",
+  end: "bottom top",
+  pin: false, // Yahan pin nahi karna hai
+  onEnter: () => {
+    // Jab stack khatam ho jaye, cards ko normal scroll hone do
+    gsap.set("#stack-cards", { pointerEvents: "auto" });
+  },
 });
