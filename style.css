@@ -1348,30 +1348,30 @@ h3 {
 
 
 
-/* ROOT VARIABLES */
 :root {
-  --space-sm: 40px;
+  --card-height: 80vh;
+  --gap: 20px;
 }
 
 /* LIST */
 .stack-cards {
   list-style: none;
-  margin: 0;
   padding: 0;
-  position: relative;
+  margin: 0;
 }
 
-/* EACH CARD */
+/* CARD */
 .stack-cards__item {
   position: sticky;
-  top: var(--space-sm);
-  transform-origin: center top;
-  margin-bottom: 40px;
+  top: 80px;
+  height: var(--card-height);
+  margin-bottom: var(--gap);
 }
 
-/* CARD DESIGN */
+/* DESIGN */
 .card__content {
   width: 85%;
+  height: 100%;
   margin: auto;
 
   display: flex;
@@ -1383,16 +1383,12 @@ h3 {
   border-radius: 20px;
 
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-  border: 1px solid rgba(255,255,255,0.08);
-
-  transition: 0.3s ease;
 }
 
 /* TEXT */
 .card__content h2 {
   color: #fff;
   font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 .card__content p {
@@ -1409,14 +1405,7 @@ h3 {
   border-radius: 12px;
 }
 
-/* HOVER */
-.stack-cards__item:hover .card__content {
-  transform: scale(1.03);
-}
-
-/* SPACING FOR SCROLL EFFECT */
-.stack-cards::after {
-  content: "";
-  display: block;
-  height: 200px;
+/* SMOOTH */
+html {
+  scroll-behavior: smooth;
 }
