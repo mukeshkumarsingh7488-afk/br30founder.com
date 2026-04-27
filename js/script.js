@@ -84,27 +84,42 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // stack card
-window.addEventListener("scroll", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".stack-cards__item");
-  const scrollPos = window.scrollY;
-  const triggerPoint = 100; // Screen ke top se kitni door card rukega
+  const stackGap = 30; // Har card ke beech ka gap
 
-  cards.forEach((card, index) => {
-    const parent = card.parentElement;
-    const cardInitialTop = parent.offsetTop + card.offsetTop;
-    const offset = index * 35; // Har card ke beech ka stacking gap
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: [0, 1],
+  };
 
-    if (scrollPos > cardInitialTop - triggerPoint - offset) {
-      // Jab scroll card tak pahuche, card ko fix kar do
-      card.style.position = "fixed";
-      card.style.top = triggerPoint + offset + "px";
-      card.style.zIndex = index;
-      card.style.width = parent.offsetWidth * 0.94 + "px"; // Width maintain rakhne ke liye
-    } else {
-      // Wapas apni purani jagah par
-      card.style.position = "relative";
-      card.style.top = "0";
-      card.style.width = "94%";
-    }
-  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Jab card screen mein aaye
+        updateStacking();
+      }
+    });
+  }, observerOptions);
+
+  cards.forEach((card) => observer.observe(card));
+
+  function updateStacking() {
+    const scrollTop = window.pageYOffset;
+
+    cards.forEach((card, index) => {
+      const cardTop = card.parentElement.offsetTop + card.offsetTop;
+      const distance = scrollTop - cardTop + 100; // 100 navbar offset hai
+
+      if (distance > index * stackGap) {
+        // Card ko stack position mein 'transform' se lock karna
+        card.style.transform = `translateY(${distance - index * stackGap}px)`;
+      } else {
+        card.style.transform = `translateY(0px)`;
+      }
+    });
+  }
+
+  window.addEventListener("scroll", updateStacking);
 });
