@@ -15,7 +15,7 @@ document.addEventListener("keydown", function (e) {
 // 🚫 DevTools detect + redirect
 setInterval(() => {
   if (window.outerWidth - window.innerWidth > 160) {
-    window.location.href = "https://br30founder.com";
+    window.location.href = "https://br30-com.vercel.app/";
   }
 }, 1000);
 

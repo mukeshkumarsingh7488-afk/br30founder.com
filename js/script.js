@@ -82,3 +82,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (navLinks) navLinks.classList.remove("show");
   });
 });
+
+// stacky card logic
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+  let scroll = window.scrollY;
+
+  cards.forEach((card, index) => {
+    let offset = index * window.innerHeight;
+    let diff = scroll - offset;
+
+    if (diff > 0) {
+      card.style.transform = `translateY(${Math.min(diff, window.innerHeight)}px)`;
+    }
+  });
+});

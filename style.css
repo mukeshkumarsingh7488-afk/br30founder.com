@@ -1346,27 +1346,50 @@ h3 {
 
 /*-- THE END --*/   
 
-/* Container */
+/* SECTION (scroll space create karta hai) */
+.cards-section {
+  height: 600vh; /* 👈 ye game changer hai */
+}
+
+/* STICKY WRAPPER */
+.cards-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* CARD LIST */
 #cards {
+  position: relative;
+  height: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* CARD */
+/* EACH CARD */
 .card {
-  position: sticky;
-  top: 100px;
-  margin-bottom: 150px; /* 👈 scroll space */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.5s ease;
 }
 
-/* STACK OFFSET (important) */
-.card:nth-child(1) { top: 100px; }
-.card:nth-child(2) { top: 120px; }
-.card:nth-child(3) { top: 140px; }
-.card:nth-child(4) { top: 160px; }
-.card:nth-child(5) { top: 180px; }
-.card:nth-child(6) { top: 200px; }
+/* STACK ORDER */
+.card:nth-child(1) { z-index: 6; }
+.card:nth-child(2) { z-index: 5; }
+.card:nth-child(3) { z-index: 4; }
+.card:nth-child(4) { z-index: 3; }
+.card:nth-child(5) { z-index: 2; }
+.card:nth-child(6) { z-index: 1; }
 
 /* CARD DESIGN */
 .card__content {
@@ -1376,30 +1399,19 @@ h3 {
   align-items: center;
 
   background: #0f172a;
-  border-radius: 20px;
   padding: 40px;
+  border-radius: 20px;
 
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-  border: 1px solid rgba(255,255,255,0.1);
-
-  transition: 0.3s ease;
-}
-
-/* Hover */
-.card:hover .card__content {
-  transform: scale(1.03);
 }
 
 /* TEXT */
 .card__content h2 {
   color: #fff;
-  font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 .card__content p {
   color: #94a3b8;
-  margin-bottom: 15px;
 }
 
 /* IMAGE */
@@ -1409,5 +1421,5 @@ h3 {
 
 .card__content img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
 }
