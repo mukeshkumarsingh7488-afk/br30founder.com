@@ -1349,34 +1349,71 @@ h3 {
 
 
 
-.stack-cards {
+:root {
+  --card-height: 400px; /* Card ki height */
+  --card-margin: 40px;  /* Cards ke beech ka gap */
+  --card-top-offset: 1em; /* Screen ke top se kitni door rukega */
+}
+
+#stack-cards {
   list-style: none;
-  margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--card-margin);
+  padding-bottom: 20vh; /* Niche thodi jagah scroll ke liye */
 }
 
-/* CARD */
 .stack-cards__item {
-  position: absolute;
-  width: 100%;
-  left: 0;
+  position: sticky;
   top: 0;
-  transition: transform 0.3s ease;
+  padding-top: calc(var(--index) * var(--card-top-offset)); /* Dynamic stacking */
 }
 
-/* OFFSET STACKING */
-.stack-cards__item:nth-child(1) { top: 80px; }
-.stack-cards__item:nth-child(2) { top: 100px; }
-.stack-cards__item:nth-child(3) { top: 120px; }
-.stack-cards__item:nth-child(4) { top: 140px; }
-.stack-cards__item:nth-child(5) { top: 160px; }
-.stack-cards__item:nth-child(6) { top: 180px; }
+/* Har card ka stacking level (Z-index) */
+.stack-cards__item:nth-child(1) { --index: 1; }
+.stack-cards__item:nth-child(2) { --index: 2; }
+.stack-cards__item:nth-child(3) { --index: 3; }
+.stack-cards__item:nth-child(4) { --index: 4; }
+.stack-cards__item:nth-child(5) { --index: 5; }
+.stack-cards__item:nth-child(6) { --index: 6; }
 
-/* DESIGN */
 .card__content {
-  width: 85%;
-  margin: auto;
-  background: #111827;
-  padding: 40px;
+  background: #1a1a1a; /* Trading dark theme */
+  color: white;
+  border: 1px solid #333;
   border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  height: var(--card-height);
+  box-shadow: 0 -20px 30px -10px rgba(0,0,0,0.5); /* Shading effect */
+}
+
+.card__content > div {
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__content h2 { font-size: 2rem; color: #00ff88; } /* Bullish Green color */
+
+.card__content figure {
+  flex: 1;
+  margin: 0;
+}
+
+.card__content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile ke liye settings */
+@media (max-width: 768px) {
+  .card__content {
+    flex-direction: column;
+    height: auto;
+  }
 }

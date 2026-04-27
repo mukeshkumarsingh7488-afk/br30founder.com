@@ -84,17 +84,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // stack card
-const cards = document.querySelectorAll(".js-stack-cards__item");
+const stackCards = document.querySelectorAll(".stack-cards__item");
 
 window.addEventListener("scroll", () => {
-  let scrollY = window.scrollY;
+  stackCards.forEach((card, index) => {
+    const rect = card.getBoundingClientRect();
+    const isStuck = rect.top <= (index + 1) * 20; // 20px gap check
 
-  cards.forEach((card, i) => {
-    let offset = i * 120; // distance between cards
-
-    let y = Math.min(scrollY * 0.5, offset);
-
-    card.style.transform = `translateY(${y}px) scale(${1 - i * 0.05})`;
-    card.style.zIndex = cards.length - i;
+    if (isStuck) {
+      // Yahan aap scale ya opacity change kar sakte ho
+      // Example: card.style.transform = `scale(${1 - index * 0.05})`;
+    }
   });
 });
