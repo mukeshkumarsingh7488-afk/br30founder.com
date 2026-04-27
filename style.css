@@ -553,11 +553,18 @@ section {
    8. HIGHLIGHTS & FLIP CARDS (Responsive Fix)
    ========================================= */
 .flip-section {
+    position: relative;
+      z-index: 5; 
+  padding-top: 150px !important; 
   padding: 60px 5%;
   text-align: center;
   background-color: #0f172a;
 }
 
+.flip-section h2 {
+  margin-top: 50px !important;
+  margin-bottom: 40px;
+}
 .flip-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1356,7 +1363,7 @@ h3 {
 }
 
 #stack-cards {
-   margin-bottom: 100px !important; 
+   margin-bottom: 120px !important; 
      padding-bottom: 50px !important;
   padding: 0;
   margin: 0;

@@ -95,26 +95,25 @@ cards.forEach((card, index) => {
   ScrollTrigger.create({
     trigger: card,
     start: `top-=${headerOffset} top`,
-    // Jab tak poora #stack-cards section scroll na ho jaye, tab tak pin rakho
     endTrigger: "#stack-cards",
     end: "bottom bottom",
     pin: true,
-    // Sirf last card par spacing true rakhenge taaki niche wala content door rahe
+    // Sirf last card par spacing rakhenge taaki "flip-section" door rahe
     pinSpacing: isLast ? true : false,
-    scrub: true,
+    scrub: 1, // Smooth scrolling ke liye
+    anticipatePin: 1,
   });
 
-  // Peeche wale cards ko gayab karne ke liye (taaki text na dikhe)
   if (index < cards.length - 1) {
     gsap.to(card, {
       scrollTrigger: {
         trigger: cards[index + 1],
         start: `top-=${headerOffset + 150} top`,
         end: `top-=${headerOffset} top`,
-        scrub: true,
+        scrub: 1,
       },
       opacity: 0,
-      scale: 0.95,
+      scale: 0.98,
     });
   }
 });
