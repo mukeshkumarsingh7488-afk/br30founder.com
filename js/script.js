@@ -82,3 +82,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (navLinks) navLinks.classList.remove("show");
   });
 });
+
+// stack card
+const cards = document.querySelectorAll(".js-stack-cards__item");
+
+window.addEventListener("scroll", () => {
+  let scrollY = window.scrollY;
+
+  cards.forEach((card, i) => {
+    let offset = i * 120; // distance between cards
+
+    let y = Math.min(scrollY * 0.5, offset);
+
+    card.style.transform = `translateY(${y}px) scale(${1 - i * 0.05})`;
+    card.style.zIndex = cards.length - i;
+  });
+});

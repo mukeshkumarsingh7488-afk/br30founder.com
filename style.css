@@ -1349,59 +1349,34 @@ h3 {
 
 
 
-/* BODY */
-body {
-  margin: 0;
-  background: #0f172a;
-}
-
-/* IMPORTANT WRAPPER FIX */
 .stack-cards {
   list-style: none;
   margin: 0;
   padding: 0;
-
-  /* 🔥 THIS IS KEY */
-  padding-bottom: 300vh; /* scroll space create karega */
 }
 
 /* CARD */
 .stack-cards__item {
-  position: sticky;
-  top: 100px; /* 👈 adjust kar sakta hai */
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease;
 }
+
+/* OFFSET STACKING */
+.stack-cards__item:nth-child(1) { top: 80px; }
+.stack-cards__item:nth-child(2) { top: 100px; }
+.stack-cards__item:nth-child(3) { top: 120px; }
+.stack-cards__item:nth-child(4) { top: 140px; }
+.stack-cards__item:nth-child(5) { top: 160px; }
+.stack-cards__item:nth-child(6) { top: 180px; }
 
 /* DESIGN */
 .card__content {
   width: 85%;
   margin: auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   background: #111827;
   padding: 40px;
   border-radius: 20px;
-
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-}
-
-/* TEXT */
-.card__content h2 {
-  color: #fff;
-}
-
-.card__content p {
-  color: #9ca3af;
-}
-
-/* IMAGE */
-.card__content figure {
-  width: 40%;
-}
-
-.card__content img {
-  width: 100%;
-  border-radius: 10px;
 }
