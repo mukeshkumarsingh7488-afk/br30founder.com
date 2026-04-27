@@ -6,4 +6,4 @@ Allow: /trading-analysis.html
 Allow: /web-service.html
 
 # Sitemap location
-Sitemap: https://br30-com.vercel.app//sitemap.xml
+Sitemap: https://br30-com.vercel.app/sitemap.xml
