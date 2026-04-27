@@ -93,12 +93,12 @@ const stackGap = 30; // Stacking offset
 cards.forEach((card, index) => {
   ScrollTrigger.create({
     trigger: card,
-    start: `top-=${headerOffset + index * stackGap} top`,
-    // Jab tak aakhiri card na aa jaye, tab tak pin rakho
+    start: `top-=${100 + index * 35} top`,
+    // Is line ko change karein:
     endTrigger: "#stack-cards",
-    end: "bottom bottom",
+    end: "bottom 100%", // Jab section ka bottom screen ke bottom par ho tab release kare
     pin: true,
-    pinSpacing: false, // Stack banane ke liye false zaroori hai
+    pinSpacing: false,
     scrub: true,
   });
 

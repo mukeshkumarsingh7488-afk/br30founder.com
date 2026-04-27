@@ -1356,7 +1356,7 @@ h3 {
 }
 
 #stack-cards {
-    padding-bottom: 20vh; 
+     padding-bottom: 15vh;  
   list-style: none;
   padding: 0;
     position: relative;
@@ -1372,6 +1372,14 @@ h3 {
   position: relative;
   z-index: 2;
   background: #0d1117; /* Background solid rakhein taaki transparency na dikhe */
+}
+
+.next-section-class { /* Apni class ka naam yahan likhein */
+  position: relative;
+  z-index: 10; /* Cards se upar rakhein taaki overlapping na dikhe */
+  background: #0d1117; /* Aapki website ka dark background color */
+  padding-top: 100px; /* Cards aur iske beech thodi saas lene ki jagah */
+  margin-top: -1px; /* Kisi bhi tarah ki gap/line ko chupane ke liye */
 }
 
 .stack-cards__item {
