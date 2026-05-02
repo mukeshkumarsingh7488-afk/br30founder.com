@@ -1,9 +1,18 @@
 User-agent: *
 Allow: /index.html
-Allow: /learn.html
-Allow: /masterclass.html
-Allow: /trading-analysis.html
-Allow: /web-service.html
+Allow: /pages/learn.html
+Allow: /pages/masterclass.html
+Allow: /pages/trading-analysis.html
+Allow: /pages/web-service.html
+Allow: /pages/BOS & CHoCH.html
+Allow: /pages/fair-value-gaps.html
+Allow: /fomo-controll.html
+Allow: /pages/liquidity-grabs.html
+Allow: /pages/loss-recovery.html
+Allow: /pages/order-blocks.html
+Allow: /pages/patience-power.html
+Allow: /pages/trading-discipline.html
+
 
 # Sitemap location
 Sitemap: https://br30-com.vercel.app/sitemap.xml

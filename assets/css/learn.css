@@ -1,0 +1,180 @@
+/* ==========================================
+           1. GLOBAL RESET & NEW THEME COLORS
+           ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  /* Aapka Body Color */
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+.learn-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ==========================================
+           2. NAVIGATION & HEADER (Purple Theme)
+           ========================================== */
+.back-link {
+  text-decoration: none;
+  color: #a020f0;
+  /* Purple Color */
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  transform: translateX(-5px);
+  opacity: 0.8;
+}
+
+.learn-header h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.learn-header span {
+  color: #a020f0;
+  /* Purple Accent */
+}
+
+.header-line {
+  width: 60px;
+  height: 4px;
+  background: #a020f0;
+  margin: 0 auto 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(160, 32, 240, 0.5);
+}
+
+/* ==========================================
+           3. CONTENT CARD (Glass-morphism)
+           ========================================== */
+.info-card {
+  background: #1e293b;
+  /* Card Background */
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid #334155;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.info-card h2 {
+  color: #a020f0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.info-card p {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* ==========================================
+           4. HIGHLIGHTS BOX (Neon Style)
+           ========================================== */
+.highlight-box {
+  background: rgba(160, 32, 240, 0.05);
+  padding: 30px;
+  border-radius: 16px;
+  margin: 30px 0;
+  border-left: 5px solid #a020f0;
+}
+
+.highlight-box h3 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.highlight-box ul {
+  list-style: none;
+}
+
+.highlight-box ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 30px;
+  color: #e2e8f0;
+  font-size: 15px;
+}
+
+.highlight-box ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #a020f0;
+  font-weight: bold;
+}
+
+/* ==========================================
+           5. PURPLE CTA BUTTON
+           ========================================== */
+.cta-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.enroll-btn {
+  text-decoration: none;
+  background: #a020f0;
+  color: white;
+  padding: 16px 45px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 10px 20px rgba(160, 32, 240, 0.3);
+  border: 1px solid #a020f0;
+}
+
+.enroll-btn:hover {
+  background: transparent;
+  color: #a020f0;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(160, 32, 240, 0.4);
+}
+
+/* ==========================================
+           6. RESPONSIVE DESIGN (MOBILE FIX)
+           ========================================== */
+@media (max-width: 600px) {
+  .learn-container {
+    padding: 30px 15px;
+  }
+
+  .learn-header h1 {
+    font-size: 26px;
+  }
+
+  .info-card {
+    padding: 25px;
+  }
+
+  .info-card h2 {
+    font-size: 20px;
+  }
+
+  .enroll-btn {
+    width: 100%;
+    /* Mobile par full width button */
+    padding: 14px 20px;
+  }
+}
