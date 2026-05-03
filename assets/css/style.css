@@ -10,7 +10,20 @@ body {
   position: relative;
    padding-top: 70px;
 }
+html {
+  scroll-behavior: smooth;
+}
+#risk-card {
+  scroll-margin-top: 100px; 
+}
+:target {
+  scroll-margin-top: 110px; /* वही वैल्यू जो JS के offset में है */
+}
 
+/* अगर कार्ड्स के बीच गैप ज़्यादा है तो इसे कम करें */
+.stack-cards__item {
+  will-change: transform, opacity;
+}
 /* Kisi bhi element ko screen se bahar nikalne se rokne ke liye */
 * {
  box-sizing: border-box;
@@ -383,10 +396,12 @@ section {
 
 /* Hero Main Section */
 .hero-main {
-  padding: 100px 5% 60px;
+ padding-top: 0px !important;
+  margin-top: -45px !important;
   background-color: #0f172a; 
   text-align: center;
-  min-height: 80vh;
+   padding-top: 40px;
+  min-height: auto; 
   display: flex;
   justify-content: center;
   align-items: center;

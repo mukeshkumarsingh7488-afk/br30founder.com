@@ -104,4 +104,100 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- broker-setup -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/broker-setup.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- charting-tools -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/charting-tools.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- entry-confirmation -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/entry-confirmation.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- indicator-setup -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/indicator-setup.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- trade-journaling -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/trade-journaling.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- kill-zones -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/kill-zones.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- multi-timeframe -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/multi-timeframe.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- news-terminals -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/news-terminals.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- poi-analysis -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/poi-analysis.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- position-sizing -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/position-sizing.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- risk-reward-ratio -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/risk-reward-ratio.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- stop-loss-discipline -->
+     <url>
+    <loc>https://br30-com.vercel.app/pages/stop-loss-discipline.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

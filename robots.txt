@@ -12,6 +12,18 @@ Allow: /pages/loss-recovery.html
 Allow: /pages/order-blocks.html
 Allow: /pages/patience-power.html
 Allow: /pages/trading-discipline.html
+Allow: /pages/broker-setup.html
+Allow: /pages/charting-tools.html
+Allow: /pages/entry-confirmation.html
+Allow: /pages/indicator-setup.html
+Allow: /pages/kill-zones.html
+Allow: /pages/multi-timeframe.html
+Allow: /pages/news-terminals.html
+Allow: /pages/poi-analysis.html
+Allow: /pages/position-sizing.html
+Allow: /pages/risk-reward-ratio.html
+Allow: /pages/stop-loss-discipline.html
+Allow: /pages/trade-journaling.html
 
 
 # Sitemap location

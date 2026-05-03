@@ -3,7 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Check karke ki page par #element hai ya nahi
   if (document.getElementById("element")) {
     var typed = new Typed("#element", {
-      strings: ["Web. Developer.", "Trader.", "Investor.", "Content Creator."],
+      strings: [
+        "Web. Developer.",
+        "Trader.",
+        "Investor.",
+        "Graphic Designer.",
+        "Content Creator.",
+      ],
       typeSpeed: 60,
       backSpeed: 40,
       loop: true,
@@ -115,5 +121,33 @@ cards.forEach((card, index) => {
     });
   }
 });
-
 ScrollTrigger.refresh();
+
+// back btn scroll function
+window.addEventListener("load", () => {
+  if (history.scrollRestoration) {
+    history.scrollRestoration = "manual";
+  }
+  const hash = window.location.hash;
+  if (hash) {
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+      const targetCard = document.querySelector(hash);
+
+      if (targetCard) {
+        const targetST = ScrollTrigger.getAll().find(
+          (st) => st.trigger === targetCard,
+        );
+        if (targetST) {
+          const extraScroll = 190;
+          const offset = 100;
+
+          window.scrollTo({
+            top: targetST.start + extraScroll - offset,
+            behavior: "auto",
+          });
+        }
+      }
+    }, 300);
+  }
+});
