@@ -1,0 +1,81 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/bos-choch", "destination": "/pages/BOS-CHoCH.html" },
+    { "source": "/broker-setup", "destination": "/pages/broker-setup.html" },
+    {
+      "source": "/charting-tools",
+      "destination": "/pages/charting-tools.html"
+    },
+    {
+      "source": "/entry-confirmation",
+      "destination": "/pages/entry-confirmation.html"
+    },
+    {
+      "source": "/fair-value-gaps",
+      "destination": "/pages/fair-value-gaps.html"
+    },
+    { "source": "/fomo-control", "destination": "/pages/fomo-controll.html" },
+    {
+      "source": "/indicator-setup",
+      "destination": "/pages/indicator-setup.html"
+    },
+    { "source": "/kill-zones", "destination": "/pages/kill-zones.html" },
+    { "source": "/learn", "destination": "/pages/learn.html" },
+    {
+      "source": "/liquidity-grabs",
+      "destination": "/pages/liquidity-grabs.html"
+    },
+    { "source": "/loss-recovery", "destination": "/pages/loss-recovery.html" },
+    { "source": "/masterclass", "destination": "/pages/masterclass.html" },
+    {
+      "source": "/multi-timeframe",
+      "destination": "/pages/multi-timeframe.html"
+    },
+    {
+      "source": "/news-terminals",
+      "destination": "/pages/news-terminals.html"
+    },
+    { "source": "/order-blocks", "destination": "/pages/order-blocks.html" },
+    {
+      "source": "/patience-power",
+      "destination": "/pages/patience-power.html"
+    },
+    {
+      "source": "/position-sizing",
+      "destination": "/pages/position-sizing.html"
+    },
+    {
+      "source": "/risk-reward-ratio",
+      "destination": "/pages/risk-reward-ratio.html"
+    },
+    {
+      "source": "/stop-loss-discipline",
+      "destination": "/pages/stop-loss-discipline.html"
+    },
+    {
+      "source": "/trade-journaling",
+      "destination": "/pages/trade-journaling.html"
+    },
+    {
+      "source": "/trading-analysis",
+      "destination": "/pages/trading-analysis.html"
+    },
+    {
+      "source": "/trading-discipline",
+      "destination": "/pages/trading-discipline.html"
+    },
+    { "source": "/web-service", "destination": "/pages/web-service.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*).(jpg|jpeg|png|webp|svg|css|js|ico)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
