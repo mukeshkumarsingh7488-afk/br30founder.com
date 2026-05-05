@@ -17,19 +17,14 @@ html {
   scroll-margin-top: 100px; 
 }
 :target {
-  scroll-margin-top: 110px; /* वही वैल्यू जो JS के offset में है */
+  scroll-margin-top: 110px; 
 }
-
-/* अगर कार्ड्स के बीच गैप ज़्यादा है तो इसे कम करें */
 .stack-cards__item {
   will-change: transform, opacity;
 }
-/* Kisi bhi element ko screen se bahar nikalne se rokne ke liye */
 * {
  box-sizing: border-box;
 }
-
-/* --- SCROLL PROGRESS BAR --- */
 #scroll-progress {
   position: fixed; 
   top: 0;
@@ -1403,14 +1398,13 @@ h3 {
    ============================================================ */
 :root {
   --card-height: 550px; 
-  --header-height: 100px; 
+  --primary-green: #00ff88;
 }
 
-/* 1. Main Container */
 #stack-cards {
   list-style: none;
-   padding-bottom: 0 !important;
-  margin-bottom: 40px !important;  
+  padding: 0;
+  margin-bottom: 40px;  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1419,7 +1413,6 @@ h3 {
   width: 100%;
 }
 
-/* 2. Individual Card Item */
 .stack-cards__item {
   width: 94%;
   max-width: 1200px;
@@ -1428,10 +1421,8 @@ h3 {
   border-radius: 32px;
   background: #1a1a1a;
   margin-bottom: 20px;
-  will-change: transform; /* Performance optimization */
 }
 
-/* 3. Card Inner Content Area */
 .card__content {
   background: #0d1117 !important; 
   border: 1px solid #30363d;
@@ -1443,19 +1434,22 @@ h3 {
   box-shadow: 0 -20px 40px rgba(0,0,0,0.8);
 }
 
-/* 4. Horizontal Grid Layout (Main Content) */
 .main-content-area.horizontal-layout {
   flex: 1;
   width: 100%;
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  overflow-y: auto; /* Internal Scrolling Enabled */
 }
+
+/* Custom Scrollbar for Desktop */
+.main-content-area::-webkit-scrollbar { width: 6px; }
+.main-content-area::-webkit-scrollbar-thumb { background: #30363d; border-radius: 10px; }
 
 .card-header h2 {
   font-size: 2.5rem;
-  color: #00ff88;
+  color: var(--primary-green);
   margin-bottom: 10px;
 }
 
@@ -1465,7 +1459,6 @@ h3 {
   margin-bottom: 30px;
 }
 
-/* 5. Sub-Grid (4 boxes) */
 .sub-card-grid-horizontal {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
@@ -1480,91 +1473,89 @@ h3 {
   padding: 20px;
   position: relative;
   overflow: hidden;
-  height: 310px; 
-  transition: border-color 0.3s ease; /* No Shaking */
+  min-height: 310px;
+  transition: border-color 0.3s ease;
 }
 
-.sub-box:hover {
-  border-color: #00ff88;
-}
+.sub-box:hover { border-color: var(--primary-green); }
 
-/* 6. Sub-box Image/Logo */
 .box-image {
   width: 100%;
   height: 110px;
   margin-bottom: 15px;
-  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000; /* optional - clean background */
+  background: #000;
+  border-radius: 12px;
 }
 
-.box-image img {
-  max-width: 80%;
-  max-height: 80%;
-  object-fit: contain;
-}
+.box-image img { max-width: 80%; max-height: 80%; object-fit: contain; }
 
-.box-content h4 {
-  color: #fff;
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-}
+.box-content h4 { color: #fff; font-size: 1.1rem; margin-bottom: 6px; }
 
-.box-content p {
-  color: #8b949e;
-  font-size: 0.85rem;
-  line-height: 1.4;
-}
+.box-content p { color: #8b949e; font-size: 0.85rem; line-height: 1.4; }
 
-/* 7. Slide-Up Button (Learn More) */
 .hover-btn-link {
   position: absolute;
   bottom: -40px; 
   left: 20px;
-  color: #00ff88;
+  color: var(--primary-green);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.85rem;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.4s ease;
   opacity: 0;
 }
 
-.sub-box:hover .hover-btn-link {
-  bottom: 20px; 
-  opacity: 1;
+.sub-box:hover .hover-btn-link { bottom: 20px; opacity: 1; }
+
+/* --- Mobile Fix (Internal Scrolling) --- */
+@media (max-width: 1100px) {
+  .sub-card-grid-horizontal { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* 8. Next Section Spacing (Meet Founder etc) */
+@media (max-width: 768px) {
+  .stack-cards__item { height: 650px !important; } /* Mobile fixed height */
+
+  .card__content { flex-direction: column; overflow: hidden; }
+
+  .main-content-area.horizontal-layout { 
+    padding: 25px 15px; 
+    overflow-y: auto; /* Active internal scroll */
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  .card-header h2 { font-size: 1.8rem; }
+
+  .sub-card-grid-horizontal { 
+    grid-template-columns: 1fr !important; 
+    gap: 15px;
+  }
+
+  .sub-box { height: auto !important; padding-bottom: 60px; }
+
+  .hover-btn-link {
+    position: relative !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    opacity: 1 !important;
+    margin-top: 15px;
+    display: inline-block;
+  }
+}
+
+/* Custom Scrollbar for Mobile */
+.main-content-area::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+}
+
+section, main, .wrapper { overflow: visible !important; }
+
+
 .next-section {
   position: relative !important;
   z-index: 20 !important; 
   background: #0d1117 !important; 
   padding-top: 80px !important; 
-}
-
-/* 9. Mobile Responsiveness */
-@media (max-width: 1100px) {
-  .sub-card-grid-horizontal { grid-template-columns: repeat(2, 1fr); }
-  .stack-cards__item { height: auto; }
-}
-
-@media (max-width: 768px) {
-  .stack-cards__item { 
-    height: auto; 
-    margin-bottom: 30px; 
-    width: 90%;
-  }
-  .card__content { flex-direction: column; }
-  .main-content-area.horizontal-layout { padding: 30px 20px; }
-}
-
-@media (max-width: 600px) {
-  .sub-card-grid-horizontal { grid-template-columns: 1fr; }
-}
-
-/* Fix for Sticky Conflict */
-section, main, .wrapper { 
-  overflow: visible !important; 
 }
