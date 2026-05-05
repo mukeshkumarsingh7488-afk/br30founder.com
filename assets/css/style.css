@@ -1440,7 +1440,7 @@ h3 {
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
-  overflow-y: auto; /* Internal Scrolling Enabled */
+  overflow-y: auto; 
 }
 
 /* Custom Scrollbar for Desktop */
@@ -1516,13 +1516,13 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .stack-cards__item { height: 650px !important; } /* Mobile fixed height */
+  .stack-cards__item { height: 650px !important; } 
 
   .card__content { flex-direction: column; overflow: hidden; }
 
   .main-content-area.horizontal-layout { 
     padding: 25px 15px; 
-    overflow-y: auto; /* Active internal scroll */
+    overflow-y: auto; 
     -webkit-overflow-scrolling: touch; 
   }
 
