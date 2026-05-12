@@ -1184,6 +1184,56 @@ h3 {
   color: #1877f2;
 }
 
+/* Telegram */
+.social-card.telegram:hover {
+  border-color: #229ed9;
+  box-shadow: 0 0 15px rgba(34, 158, 217, 0.5);
+}
+
+.social-card.telegram:hover .social-icon i {
+  color: #229ed9;
+}
+
+/* WhatsApp */
+.social-card.whatsapp:hover {
+  border-color: #25d366;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+}
+
+.social-card.whatsapp:hover .social-icon i {
+  color: #25d366;
+}
+
+/* Threads */
+.social-card.threads:hover {
+  border-color: #ffffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.social-card.threads:hover .social-icon i {
+  color: #ffffff;
+}
+
+/* LinkedIn */
+.social-card.linkedin:hover {
+  border-color: #0a66c2;
+  box-shadow: 0 0 15px rgba(10, 102, 194, 0.5);
+}
+
+.social-card.linkedin:hover .social-icon i {
+  color: #0a66c2;
+}
+
+/* Gmail */
+.social-card.gmail:hover {
+  border-color: #ea4335;
+  box-shadow: 0 0 15px rgba(234, 67, 53, 0.5);
+}
+
+.social-card.gmail:hover .social-icon i {
+  color: #ea4335;
+}
+
 /* ==========================================
    MOBILE RESPONSIVE (Final Fix)
    ========================================== */
