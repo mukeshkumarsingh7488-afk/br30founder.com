@@ -1173,7 +1173,7 @@ h3 {
   color: #e1306c;
 }
 .social-card.x-twitter:hover .social-icon {
-  color: #ffffff;
+  color: #000;
 }
 .social-card.fb:hover .social-icon {
   color: #1877f2;
@@ -1185,7 +1185,7 @@ h3 {
   color: #25d366;
 }
 .social-card.threads:hover .social-icon {
-  color: #ffffff;
+  color: #000;
 }
 .social-card.linkedin:hover .social-icon {
   color: #0a66c2;
