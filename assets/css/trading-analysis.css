@@ -1,40 +1,27 @@
-/* 1. COLORS & THEME */
 :root {
   --bg-color: #0b0118;
-  /* Deep Dark Background */
   --card-bg: #160a2c;
-  /* Purple Dark Card */
   --accent-purple: #a020f0;
-  /* Main Purple */
   --text-white: #ffffff;
-  /* Big Text Color */
   --text-dim: #b2bec3;
-  /* Secondary Text */
   --border-color: rgba(160, 32, 240, 0.2);
 }
-
-/* 2. RESET & BASE */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
 body {
   background-color: var(--bg-color);
   color: var(--text-white);
   line-height: 1.6;
   padding: 20px;
-  /* Small padding for mobile */
 }
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
 }
-
-/* 1. HOME BUTTON HOVER EFFECT */
 .btn-home {
   display: inline-block;
   padding: 14px 40px;
@@ -44,59 +31,42 @@ body {
   border-radius: 50px;
   font-weight: bold;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  /* Smooth bounce effect */
   box-shadow: 0 5px 15px rgba(160, 32, 240, 0.3);
   border: 2px solid transparent;
 }
-
 .btn-home:hover {
   background: transparent;
-  /* Purple se transparent ho jayega */
   color: white;
   border-color: var(--accent-purple);
-  /* Border purple ho jayegi */
   box-shadow: 0 0 25px rgba(160, 32, 240, 0.6);
-  /* Glowing effect */
   transform: scale(1.05) translateY(-2px);
-  /* Thoda upar aur bada dikhega */
 }
-
-/* 2. BACK BUTTON HOVER (Link style) */
 .back-btn:hover {
   color: white;
   text-shadow: 0 0 10px var(--accent-purple);
   transform: translateX(-5px);
-  /* Piche ki taraf thoda move hoga */
   transition: 0.3s ease;
 }
-
-/* 3. CARD HOVER (Already in code, but making it better) */
 .card:hover {
   border-color: var(--accent-purple);
   background: rgba(160, 32, 240, 0.12);
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-
 header {
   margin-bottom: 40px;
 }
-
 header h1 {
   font-size: clamp(1.8rem, 5vw, 2.8rem);
   margin-bottom: 10px;
 }
-
 .purple {
   color: var(--accent-purple);
 }
-
 header p {
   color: var(--text-dim);
   font-size: 1.1rem;
 }
-
-/* 4. SECTION BOXES */
 .section-box {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -104,21 +74,16 @@ header p {
   padding: clamp(20px, 4vw, 40px);
   margin-bottom: 35px;
 }
-
 h2 {
   font-size: clamp(1.4rem, 3vw, 1.8rem);
   margin-bottom: 25px;
   color: var(--text-white);
 }
-
-/* 5. RESPONSIVE GRID SYSTEM */
 .grid {
   display: grid;
-  /* Ye line mobile/desktop handle karti hai */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
-
 .card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -126,31 +91,25 @@ h2 {
   padding: 25px;
   transition: 0.3s;
 }
-
 .card:hover {
   border-color: var(--accent-purple);
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.06);
 }
-
 .card h3 {
   color: var(--accent-purple);
   margin-bottom: 12px;
   font-size: 1.2rem;
 }
-
 .card p {
   color: var(--text-dim);
   font-size: 0.95rem;
 }
-
-/* 6. INDICATOR LIST (2 Columns on Desktop, 1 on Mobile) */
 .indicator-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
-
 .indicator-item {
   background: rgba(160, 32, 240, 0.1);
   padding: 15px;
@@ -159,8 +118,6 @@ h2 {
   font-weight: 500;
   color: #efefef;
 }
-
-/* 7. BADGES */
 .badge {
   display: inline-block;
   padding: 5px 12px;
@@ -171,21 +128,16 @@ h2 {
   margin-bottom: 15px;
   color: #fff;
 }
-
 .badge-purple {
   background: var(--accent-purple);
 }
-
 .badge-cyan {
   background: #a020f0;
   color: white;
 }
-
 .badge-red {
   background: #a020f0;
 }
-
-/* 8. BUTTONS */
 .btn-home {
   display: inline-block;
   padding: 14px 35px;
@@ -197,8 +149,6 @@ h2 {
   transition: 0.3s;
   box-shadow: 0 5px 15px rgba(160, 32, 240, 0.3);
 }
-
-/* Responsive Adjustments for Desktop */
 @media (min-width: 768px) {
   body {
     padding: 50px;

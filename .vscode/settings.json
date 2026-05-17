@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": false,
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "html.format.wrapLineLength": 999999,
+  "html.format.wrapAttributes": "auto",
+
+  "prettier.printWidth": 999999,
+  "prettier.singleAttributePerLine": false,
+  "prettier.htmlWhitespaceSensitivity": "ignore"
+}

@@ -1,6 +1,5 @@
-// ===== TYPED TEXT =====
+//#region 
 document.addEventListener("DOMContentLoaded", () => {
-  // Check karke ki page par #element hai ya nahi
   if (document.getElementById("element")) {
     var typed = new Typed("#element", {
       strings: [
@@ -13,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
       typeSpeed: 60,
       backSpeed: 40,
       loop: true,
-      // Cursor ka color set karne ke liye
       cursorChar: "|",
       contentType: "html",
     });
@@ -26,11 +24,8 @@ const outline = document.querySelector(".cursor-outline");
 window.addEventListener("mousemove", (e) => {
   const posX = e.clientX;
   const posY = e.clientY;
-
   dot.style.left = `${posX}px`;
   dot.style.top = `${posY}px`;
-
-  // Outline delay ke saath chalegi (Lag free logic)
   outline.animate(
     {
       left: `${posX}px`,
@@ -40,24 +35,18 @@ window.addEventListener("mousemove", (e) => {
   );
 });
 
-// Scroll Progress Bar Logic
 window.onscroll = function () {
   let winScroll = document.documentElement.scrollTop || document.body.scrollTop;
   let height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-
-  // Percentage calculation
   let scrolled = (winScroll / height) * 100;
-
-  // Bar ki width update karna
   let progressBar = document.getElementById("scroll-progress");
   if (progressBar) {
     progressBar.style.width = scrolled + "%";
   }
 };
 
-// Hover Effect on all clickable items
 document
   .querySelectorAll("a, .card, .contact-btn, .indicator-item")
   .forEach((link) => {
@@ -71,30 +60,22 @@ document
     });
   });
 
-// nav dropedown
 document.addEventListener("DOMContentLoaded", () => {
   const dropdownBtn = document.getElementById("pageDropdownBtn");
   const navLinks = document.getElementById("navLinks");
-
   if (dropdownBtn) {
     dropdownBtn.onclick = (e) => {
       e.stopPropagation();
       navLinks.classList.toggle("show");
     };
   }
-
-  // Bahar click karne par dropdown band ho jaye
   document.addEventListener("click", () => {
     if (navLinks) navLinks.classList.remove("show");
   });
 });
-
-// stack card
 gsap.registerPlugin(ScrollTrigger);
-
 const cards = gsap.utils.toArray(".stack-cards__item");
 const headerOffset = 100;
-
 cards.forEach((card, index) => {
   ScrollTrigger.create({
     trigger: card,
@@ -106,7 +87,6 @@ cards.forEach((card, index) => {
     scrub: 1,
     anticipatePin: 1,
   });
-
   if (index < cards.length - 1) {
     gsap.to(card, {
       scrollTrigger: {
@@ -122,8 +102,6 @@ cards.forEach((card, index) => {
   }
 });
 ScrollTrigger.refresh();
-
-// back btn scroll function
 window.addEventListener("load", () => {
   if (history.scrollRestoration) {
     history.scrollRestoration = "manual";
@@ -133,7 +111,6 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       ScrollTrigger.refresh();
       const targetCard = document.querySelector(hash);
-
       if (targetCard) {
         const targetST = ScrollTrigger.getAll().find(
           (st) => st.trigger === targetCard,
@@ -151,3 +128,4 @@ window.addEventListener("load", () => {
     }, 300);
   }
 });
+//#endregion
