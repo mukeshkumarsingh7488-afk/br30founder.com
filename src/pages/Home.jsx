@@ -1040,7 +1040,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               <div className="service-icon">🎨</div>
               <h3>Custom Logo Design</h3>
               <p>हम आपके ब्रांड और बिज़नेस के लिए Professional, Modern और Unique Custom Logo Design बनाते हैं जिससे आपकी Brand Identity और Trust दोनों मजबूत हो।</p>
-              <Link to="/web-service" className="service-btn" target="_blank" rel="noopener noreferrer">
+              <Link to="/custom-logo" className="service-btn" target="_blank" rel="noopener noreferrer">
                 Explore Logo Services
               </Link>
             </div>

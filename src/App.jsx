@@ -26,6 +26,7 @@ import TradeJournaling from "./pages/TradeJournaling.jsx";
 import TradingAnalysis from "./pages/TradingAnalysis.jsx";
 import TradingDiscipline from "./pages/TradingDiscipline.jsx";
 import WebService from "./pages/WebService.jsx";
+import Customlogo from "./pages/Customlogo.jsx";
 
 export default function App() {
   return (
@@ -52,14 +53,12 @@ export default function App() {
           <Route path="/poi-analysis" element={<PoiAnalysis />} />
           <Route path="/position-sizing" element={<PositionSizing />} />
           <Route path="/risk-reward-ratio" element={<RiskRewardRatio />} />
-          <Route
-            path="/stop-loss-discipline"
-            element={<StopLossDiscipline />}
-          />
+          <Route path="/stop-loss-discipline" element={<StopLossDiscipline />} />
           <Route path="/trade-journaling" element={<TradeJournaling />} />
           <Route path="/trading-analysis" element={<TradingAnalysis />} />
           <Route path="/trading-discipline" element={<TradingDiscipline />} />
           <Route path="/web-service" element={<WebService />} />
+          <Route path="/custom-logo" element={<Customlogo />} />
         </Route>
       </Routes>
     </BrowserRouter>
