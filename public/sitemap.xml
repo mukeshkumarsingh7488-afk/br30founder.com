@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://br30-com.vercel.app/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Learn Page -->
+  <url>
+    <loc>https://br30-com.vercel.app/learn</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Masterclass -->
+  <url>
+    <loc>https://br30-com.vercel.app/masterclass</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Trading Analysis -->
+  <url>
+    <loc>https://br30-com.vercel.app/trading-analysis</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Web Service -->
+  <url>
+    <loc>https://br30-com.vercel.app/web-service</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- bos&choch -->
+   <url>
+    <loc>https://br30-com.vercel.app/BOS-CHoCH</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- fair vailu gap -->
+     <url>
+    <loc>https://br30-com.vercel.app/fair-value-gaps</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- fomo controll  -->
+     <url>
+    <loc>https://br30-com.vercel.app/fomo-controll</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- liqudity -->
+     <url>
+    <loc>https://br30-com.vercel.app/liquidity-grabs</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- loss recover -->
+     <url>
+    <loc>https://br30-com.vercel.app/loss-recovery</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- order block -->
+     <url>
+    <loc>https://br30-com.vercel.app/order-blocks</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- patence -->
+     <url>
+    <loc>https://br30-com.vercel.app/patience-power</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- trading disipline -->
+     <url>
+    <loc>https://br30-com.vercel.app/trading-discipline</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- broker-setup -->
+     <url>
+    <loc>https://br30-com.vercel.app/broker-setup</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- charting-tools -->
+     <url>
+    <loc>https://br30-com.vercel.app/charting-tools</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- entry-confirmation -->
+     <url>
+    <loc>https://br30-com.vercel.app/entry-confirmation</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- indicator-setup -->
+     <url>
+    <loc>https://br30-com.vercel.app/indicator-setup</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- trade-journaling -->
+     <url>
+    <loc>https://br30-com.vercel.app/trade-journaling</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- kill-zones -->
+     <url>
+    <loc>https://br30-com.vercel.app/kill-zones</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- multi-timeframe -->
+     <url>
+    <loc>https://br30-com.vercel.app/multi-timeframe</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- news-terminals -->
+     <url>
+    <loc>https://br30-com.vercel.app/news-terminals</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- poi-analysis -->
+     <url>
+    <loc>https://br30-com.vercel.app/poi-analysis</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- position-sizing -->
+     <url>
+    <loc>https://br30-com.vercel.app/position-sizing</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- risk-reward-ratio -->
+     <url>
+    <loc>https://br30-com.vercel.app/risk-reward-ratio</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- stop-loss-discipline -->
+     <url>
+    <loc>https://br30-com.vercel.app/stop-loss-discipline</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

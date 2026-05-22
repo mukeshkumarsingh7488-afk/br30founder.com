@@ -1,0 +1,152 @@
+[
+  {
+    "component": "Home",
+    "file": "Home.jsx",
+    "route": "/",
+    "title": "Mukesh Raj - Founder Of BR30 Group"
+  },
+  {
+    "component": "BosChoch",
+    "file": "BosChoch.jsx",
+    "route": "/BOS-CHoCH",
+    "title": "FOMO Control in Trading | Avoid Overtrading & Build Discipline - BR30 Trader"
+  },
+  {
+    "component": "BrokerSetup",
+    "file": "BrokerSetup.jsx",
+    "route": "/broker-setup",
+    "title": "Best Broker Setup for SMC Trading | Dhan & Fyers Execution Guide - BR30 Trader"
+  },
+  {
+    "component": "ChartingTools",
+    "file": "ChartingTools.jsx",
+    "route": "/charting-tools",
+    "title": "Advanced Charting Tools for Trading | Indicators, Price Action & TradingView Setup - BR30 Trader"
+  },
+  {
+    "component": "EntryConfirmation",
+    "file": "EntryConfirmation.jsx",
+    "route": "/entry-confirmation",
+    "title": "Entry Confirmation in Trading | Confirm Breakouts & Avoid Fake Signals -BR30 Trader"
+  },
+  {
+    "component": "FairValueGaps",
+    "file": "FairValueGaps.jsx",
+    "route": "/fair-value-gaps",
+    "title": "Fair Value Gaps (FVG) Trading Strategy | Smart Money Concept Guide - BR30 Trader"
+  },
+  {
+    "component": "FomoControll",
+    "file": "FomoControll.jsx",
+    "route": "/fomo-controll",
+    "title": "FOMO Control in Trading | Avoid Overtrading & Build Discipline - BR30 Trader"
+  },
+  {
+    "component": "IndicatorSetup",
+    "file": "IndicatorSetup.jsx",
+    "route": "/indicator-setup",
+    "title": "Smart Indicator Setup for Trading | Best Indicators & Settings Guide -BR30 Trader"
+  },
+  {
+    "component": "KillZones",
+    "file": "KillZones.jsx",
+    "route": "/kill-zones",
+    "title": "Trading Kill Zones | Best Time to Trade Forex & Intraday Sessions - BR30 Trader"
+  },
+  {
+    "component": "Learn",
+    "file": "Learn.jsx",
+    "route": "/learn",
+    "title": "Mastering the Markets | BR30 Trader"
+  },
+  {
+    "component": "LiquidityGrabs",
+    "file": "LiquidityGrabs.jsx",
+    "route": "/liquidity-grabs",
+    "title": "Liquidity Grabs Trading Strategy | Smart Money Concept (SMC) - BR30 Trader"
+  },
+  {
+    "component": "LossRecovery",
+    "file": "LossRecovery.jsx",
+    "route": "/loss-recovery",
+    "title": "Loss Recovery Strategy in Trading | Risk Management & Discipline - BR30 Trader"
+  },
+  {
+    "component": "Masterclass",
+    "file": "Masterclass.jsx",
+    "route": "/masterclass",
+    "title": "Masterclass Roadmap | BR30 Trader"
+  },
+  {
+    "component": "MultiTimeframe",
+    "file": "MultiTimeframe.jsx",
+    "route": "/multi-timeframe",
+    "title": "Multi-Timeframe Analysis in Trading | Top-Down Strategy Guide - BR30 Trader"
+  },
+  {
+    "component": "NewsTerminals",
+    "file": "NewsTerminals.jsx",
+    "route": "/news-terminals",
+    "title": "Market Terminals & News for Trading | Real-Time Data & Analysis Tools - BR30 Trader"
+  },
+  {
+    "component": "OrderBlocks",
+    "file": "OrderBlocks.jsx",
+    "route": "/order-blocks",
+    "title": "Order Blocks Trading Strategy | Smart Money Concept (SMC) - BR30 Trader"
+  },
+  {
+    "component": "PatiencePower",
+    "file": "PatiencePower.jsx",
+    "route": "/patience-power",
+    "title": "Patience Power in Trading | Discipline & Consistency - BR30 Trader"
+  },
+  {
+    "component": "PoiAnalysis",
+    "file": "PoiAnalysis.jsx",
+    "route": "/poi-analysis",
+    "title": "High Probability POI in Trading | Supply Demand & Entry Zones - BR30 Trader"
+  },
+  {
+    "component": "PositionSizing",
+    "file": "PositionSizing.jsx",
+    "route": "/position-sizing",
+    "title": "Position Sizing in Trading | Risk Management & Lot Size Calculator - BR30 Trader"
+  },
+  {
+    "component": "RiskRewardRatio",
+    "file": "RiskRewardRatio.jsx",
+    "route": "/risk-reward-ratio",
+    "title": "Risk Reward Ratio in Trading | Profit Strategy & Risk Management - BR30 Trader"
+  },
+  {
+    "component": "StopLossDiscipline",
+    "file": "StopLossDiscipline.jsx",
+    "route": "/stop-loss-discipline",
+    "title": "Stop Loss Discipline in Trading | Risk Control & Loss Management - BR30 Trader"
+  },
+  {
+    "component": "TradeJournaling",
+    "file": "TradeJournaling.jsx",
+    "route": "/trade-journaling",
+    "title": "Trade Journaling in Trading | Improve Performance & Consistency - BR30 Trader"
+  },
+  {
+    "component": "TradingAnalysis",
+    "file": "TradingAnalysis.jsx",
+    "route": "/trading-analysis",
+    "title": "Trading Analysis | Full Guide - BR30 Trader"
+  },
+  {
+    "component": "TradingDiscipline",
+    "file": "TradingDiscipline.jsx",
+    "route": "/trading-discipline",
+    "title": "Trading Discipline | Become Consistent Trader - BR30 Trader"
+  },
+  {
+    "component": "WebService",
+    "file": "WebService.jsx",
+    "route": "/web-service",
+    "title": "Web Services | Build Your Digital Presence - BR30 Founder"
+  }
+]

@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+Allow: /learn
+Allow: /masterclass
+Allow: /trading-analysis
+Allow: /web-service
+Allow: /BOS & CHoCH
+Allow: /fair-value-gaps
+Allow: /fomo-controll
+Allow: /liquidity-grabs
+Allow: /loss-recovery
+Allow: /order-blocks
+Allow: /patience-power
+Allow: /trading-discipline
+Allow: /broker-setup
+Allow: /charting-tools
+Allow: /entry-confirmation
+Allow: /indicator-setup
+Allow: /kill-zones
+Allow: /multi-timeframe
+Allow: /news-terminals
+Allow: /poi-analysis
+Allow: /position-sizing
+Allow: /risk-reward-ratio
+Allow: /stop-loss-discipline
+Allow: /trade-journaling
+
+
+# Sitemap location
+Sitemap: https://br30-com.vercel.app/sitemap.xml
