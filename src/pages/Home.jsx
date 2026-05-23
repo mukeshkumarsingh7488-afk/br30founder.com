@@ -735,7 +735,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                     <li>Risk Management Rules</li>
                     <li>Daily Market Insights</li>
                   </ul>
-                  <Link to="/trading-analysis" className="service-btn" target="_blank" rel="noopener noreferrer">
+                  <Link to="/trading-analysis" className="service-btn" rel="noopener noreferrer">
                     View Trading Analysis
                   </Link>
                 </div>
@@ -753,7 +753,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                     <li>Step-by-Step Roadmaps</li>
                     <li>Free Learning Resources</li>
                   </ul>
-                  <Link to="/masterclass" className="service-btn" target="_blank" rel="noopener noreferrer">
+                  <Link to="/masterclass" className="service-btn" rel="noopener noreferrer">
                     View Masterclass
                   </Link>
                 </div>
@@ -1024,7 +1024,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               <div className="service-icon">📊</div>
               <h3>Premium Trading Course</h3>
               <p>बेसिक से लेकर एडवांस तक ऑप्शन ट्रेडिंग और चार्ट एनालिसिस सीखें। लाइव मार्केट सपोर्ट के साथ।</p>
-              <Link to="/learn" className="service-btn" target="_blank" rel="noopener noreferrer">
+              <Link to="/learn" className="service-btn" rel="noopener noreferrer">
                 Start Learning Now
               </Link>
             </div>
@@ -1032,7 +1032,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               <div className="service-icon">💻</div>
               <h3>Web. Services</h3>
               <p>प्रोफेशनल ट्रेडिंग डैशबोर्ड, ई-कॉमर्स और बिज़नेस वेबसाइट्स का कस्टमाइज्ड डेवलपमेंट।</p>
-              <Link to="/web-service" className="service-btn" target="_blank" rel="noopener noreferrer">
+              <Link to="/web-service" className="service-btn" rel="noopener noreferrer">
                 Explore Web Services
               </Link>
             </div>
@@ -1040,7 +1040,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               <div className="service-icon">🎨</div>
               <h3>Custom Logo Design</h3>
               <p>हम आपके ब्रांड और बिज़नेस के लिए Professional, Modern और Unique Custom Logo Design बनाते हैं जिससे आपकी Brand Identity और Trust दोनों मजबूत हो।</p>
-              <Link to="/custom-logo" className="service-btn" target="_blank" rel="noopener noreferrer">
+              <Link to="/custom-logo" className="service-btn" rel="noopener noreferrer">
                 Explore Logo Services
               </Link>
             </div>

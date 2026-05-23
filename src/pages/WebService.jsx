@@ -32,7 +32,7 @@ export default function WebService() {
             </div>
             <p>Whether you are a professional Trader or a business owner, we have the right tools to bring your vision to life. Let’s collaborate to build something extraordinary.</p>
             <div className="cta-box">
-              <a href="mailto:br30service.contact@gmail.com" className="contact-btn">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Free Quotation Request&body=Hello BR30 Team,%0D%0AI want a free quotation." target="_blank" rel="noopener noreferrer" className="contact-btn">
                 Get a Free Quotation
               </a>
             </div>

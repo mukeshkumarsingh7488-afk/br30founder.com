@@ -67,7 +67,9 @@ export default function Customlogo() {
         <section className="cta">
           <h2>Ready to Build Your Brand Identity?</h2>
           <p>BR30 team आपके brand के लिए professional custom logo ready कर सकती है।</p>
-          <a href="mailto:br30service.contact@gmail.com?subject=Custom Logo Design Request">Get Custom Logo</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Custom Logo Design Request&body=Hello BR30 Team,%0D%0AI want a custom logo design quotation." target="_blank" rel="noopener noreferrer">
+            Get Custom Logo
+          </a>
         </section>
       </main>
     </>
