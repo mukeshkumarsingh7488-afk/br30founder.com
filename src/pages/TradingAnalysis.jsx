@@ -12,7 +12,7 @@ export default function TradingAnalysis() {
           <header>
             <h1>
               Trading
-              <span className="purple">Analysis</span>
+              <span className="purple"> Analysis </span>
               Deep Dive 💹
             </h1>
             <p>मार्केट को गहराई से समझने के लिए एक कम्प्लीट गाइड।</p>

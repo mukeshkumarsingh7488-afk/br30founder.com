@@ -12,7 +12,7 @@ export default function Learn() {
           <header className="learn-header">
             <h1>
               Mastering the Art of
-              <span>Trading</span>
+              <span> Trading</span>
             </h1>
             <div className="header-line"></div>
           </header>

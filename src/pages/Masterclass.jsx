@@ -8,7 +8,7 @@ export default function Masterclass() {
         <header className="header">
           <h1>
             Stock Market
-            <span className="purple">Masterclass</span>
+            <span className="purple"> Masterclass</span>
             📈
           </h1>
           <p>From Basics to Advanced Trading Strategies</p>

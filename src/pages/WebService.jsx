@@ -12,7 +12,7 @@ export default function WebService() {
           <header className="header">
             <h1>
               Building Your
-              <span>Digital Presence</span>
+              <span> Digital Presence</span>
             </h1>
             <div className="line"></div>
           </header>
