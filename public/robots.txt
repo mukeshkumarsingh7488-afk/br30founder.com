@@ -1,5 +1,8 @@
 User-agent: *
+
 Allow: /
+Allow: /robots.txt
+Allow: /sitemap.xml
 Allow: /learn
 Allow: /masterclass
 Allow: /trading-analysis
