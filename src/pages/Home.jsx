@@ -944,7 +944,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
         </section>
         <section id="skills" className="skills-section">
           <h2 className="section-title">
-            <span className="purple">My</span> Tech & Trading Stack
+            My <span className="purple">Tech & Trading Stack</span>
           </h2>
           <div className="skills-container">
             <div className="skill-category">
