@@ -50,7 +50,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
           <nav id="navLinks">
             <a href="#home-section">Home</a>
             <a href="#service">Service</a>
-            <a href="#connect">Connect</a>
+            <a href="#social-connect">Connect</a>
             <a href="#team">Our Team</a>
             <a href="#projects">Projects</a>
             <a href="#browse">Browse</a>
@@ -185,7 +185,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>📧 Support Email</h4>
                       <p>Facing any issue? Reach out and get fast professional help.</p>
                     </div>
-                    <a href="mailto:support.br30trader@gmail.com?subject=Support%20Request&amp;body=Hello%20BR30%20Support%20Team,%0A%0AMujhe%20help%20chahiye..." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Email BR30 Trader Support Team" aria-label="BR30 Trader Support Email">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support.br30trader@gmail.com&su=Support%20Request&body=Hello%20BR30%20Support%20Team,%0A%0AMujhe%20help%20chahiye..." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Email BR30 Trader Support Team" aria-label="BR30 Trader Support Email">
                       ✉ Contact Support
                     </a>
                   </div>
@@ -197,7 +197,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>🌐 Web Service Support</h4>
                       <p>For website, services, or technical queries contact our dev team.</p>
                     </div>
-                    <a href="mailto:br30service.contact@gmail.com?subject=Service%20Inquiry&amp;body=Hello%20BR30%20Team,%0A%0AMujhe%20web%20service%20ke%20bare%20mein%20jaankari%20chahiye..." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Contact BR30 Trader Web Service Support Team" aria-label="BR30 Trader Web Service Support">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Service%20Inquiry&body=Hello%20BR30%20Team,%0A%0AMujhe%20web%20service%20ke%20bare%20mein%20jaankari%20chahiye..." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Contact BR30 Trader Web Service Support Team" aria-label="BR30 Trader Web Service Support">
                       🛠 Request Service
                     </a>
                   </div>
@@ -293,7 +293,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>⚛️ Frontend Development</h4>
                       <p>Modern UI/UX with React.js, responsive design, and smooth user experience.</p>
                     </div>
-                    <a href="https://br-30-kart.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Explore BR30 Frontend Development and UI Design Work" aria-label="BR30 Frontend Development Services">
+                    <a href="https://br-30-group-com.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Explore BR30 Frontend Development and UI Design Work" aria-label="BR30 Frontend Development Services">
                       ⚛️ View UI Work
                     </a>
                   </div>
@@ -305,7 +305,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>🛠 Backend Development</h4>
                       <p>Secure APIs, authentication, database handling with Node.js & scalable architecture.</p>
                     </div>
-                    <a href="mailto:br30service.contact@gmail.com?subject=Backend%20Development%20Service%20Request&amp;body=Hello%20BR30%20Team,%0A%0AMujhe%20backend%20development%20service%20chahiye.%20Please%20project%20details%20aur%20pricing%20share%20kare...%0A%0AThanks." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Hire BR30 Backend Development Services" aria-label="BR30 Backend Development Service">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Backend%20Development%20Service%20Request&body=Hello%20BR30%20Team,%0A%0AMujhe%20backend%20development%20service%20chahiye.%20Please%20project%20details%20aur%20pricing%20share%20kare...%0A%0AThanks." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Hire BR30 Backend Development Services" aria-label="BR30 Backend Development Service">
                       🛠 Hire Backend Dev
                     </a>
                   </div>
@@ -317,7 +317,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>🐍 Automation & Scripts</h4>
                       <p>Python automation, data scraping, bots, and smart trading tools.</p>
                     </div>
-                    <a href="mailto:br30service.contact@gmail.com?subject=Automation%20%26%20Python%20Service%20Request&amp;body=Hello%20BR30%20Team,%0A%0AMujhe%20automation%20%26%20Python%20scripts%20service%20chahiye.%20Please%20details%20share%20kare...%0A%0AThanks." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Get Python Automation and Trading Bot Services" aria-label="BR30 Python Automation Services">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Automation%20%26%20Python%20Service%20Request&body=Hello%20BR30%20Team,%0A%0AMujhe%20automation%20%26%20Python%20scripts%20service%20chahiye.%20Please%20details%20share%20kare...%0A%0AThanks." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Get Python Automation and Trading Bot Services" aria-label="BR30 Python Automation Services">
                       🐍 Automate Now
                     </a>
                   </div>
@@ -329,7 +329,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>🚀 Deployment & Hosting</h4>
                       <p>Fast, secure deployment using GitHub, Vercel, and cloud infrastructure.</p>
                     </div>
-                    <a href="mailto:br30service.contact@gmail.com?subject=Website%20Deployment%20Service&amp;body=Hello%20BR30%20Team,%0A%0AMujhe%20website%20deployment%20%26%20hosting%20service%20chahiye.%20Please%20guide%20me...%0A%0AThanks." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Launch Your Website with BR30 Deployment and Hosting Services" aria-label="BR30 Website Deployment and Hosting Services">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Website%20Deployment%20Service&body=Hello%20BR30%20Team,%0A%0AMujhe%20website%20deployment%20%26%20hosting%20service%20chahiye.%20Please%20guide%20me...%0A%0AThanks." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Launch Your Website with BR30 Deployment and Hosting Services" aria-label="BR30 Website Deployment and Hosting Services">
                       🚀 Launch My Website
                     </a>
                   </div>
@@ -353,7 +353,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>✨ Minimalist Design</h4>
                       <p>Clean, modern, and professional logos that focus on simplicity and timeless brand value.</p>
                     </div>
-                    <a href="mailto:br30service.contact@gmail.com?subject=Custom Logo Request&amp;body=Hello BR30 Team,%0A%0AMujhe ek custom logo chahiye.%0A%0APlease mujhe pricing aur details share karein.%0A%0AThanks." className="hover-btn-link blink-btn" target="_blank" rel="noopener noreferrer" title="Custom Minimalist Logo Design Service - BR30 Kart" aria-label="Custom Minimalist Logo Design Service">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Custom%20Logo%20Request&body=Hello%20BR30%20Team,%0A%0AMujhe%20ek%20custom%20logo%20chahiye.%0A%0APlease%20mujhe%20pricing%20aur%20details%20share%20karein.%0A%0AThanks." className="hover-btn-link blink-btn" target="_blank" rel="noopener noreferrer" title="Custom Minimalist Logo Design Service - BR30 Kart" aria-label="Custom Minimalist Logo Design Service">
                       ✨ Get Custom Logo
                     </a>
                   </div>
@@ -365,7 +365,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>🦊 Mascot & Community</h4>
                       <p>Bold and character-based logos perfect for trading communities, YouTube, and gaming brands.</p>
                     </div>
-                    <a href="mailto:br30service.contact@gmail.com?subject=Mascot%20Logo%20Design%20Request&amp;body=Hello%20BR30%20Team,%0A%0AMujhe%20ek%20custom%20mascot%20logo%20design%20karwana%20hai.%0A%0APlease%20mujhe%20pricing%20aur%20timeline%20share%20karein.%0A%0AThanks." className="hover-btn-link blink-btn" target="_blank" rel="noopener noreferrer" title="Mascot Logo &amp; Community Branding Service - BR30 Kart" aria-label="Mascot Logo Design Service">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Mascot%20Logo%20Design%20Request&body=Hello%20BR30%20Team,%0A%0AMujhe%20ek%20custom%20mascot%20logo%20design%20karwana%20hai.%0A%0APlease%20mujhe%20pricing%20aur%20timeline%20share%20karein.%0A%0AThanks." className="hover-btn-link blink-btn" target="_blank" rel="noopener noreferrer" title="Mascot Logo &amp; Community Branding Service - BR30 Kart" aria-label="Mascot Logo Design Service">
                       🦊 Design My Mascot
                     </a>
                   </div>
@@ -377,7 +377,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>✒️ Premium Typography</h4>
                       <p>Custom lettermarks and luxury text-based logos tailored for high-end corporate identity.</p>
                     </div>
-                    <a href="mailto:br30service.contact@gmail.com?subject=Typography Logo Request&amp;body=Hello BR30 Team,%0A%0AMujhe typography-based logo design chahiye.%0A%0APlease mujhe pricing aur font styles share karein.%0A%0AThanks." className="hover-btn-link blink-btn" target="_blank" rel="noopener noreferrer" title="Premium Typography Logo Design Service - BR30 Kart" aria-label="Typography Logo Design Service">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=Typography%20Logo%20Request&body=Hello%20BR30%20Team,%0A%0AMujhe%20typography-based%20logo%20design%20chahiye.%0A%0APlease%20mujhe%20pricing%20aur%20font%20styles%20share%20karein.%0A%0AThanks." className="hover-btn-link blink-btn" target="_blank" rel="noopener noreferrer" title="Premium Typography Logo Design Service - BR30 Kart" aria-label="Typography Logo Design Service">
                       ✒️ View Typography
                     </a>
                   </div>
@@ -389,7 +389,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <h4>💠 3D & Abstract Shapes</h4>
                       <p>Futuristic 3D logos and geometric shapes designed for crypto, tech, and innovative startups.</p>
                     </div>
-                    <a href="mailto:br30service.contact@gmail.com?subject=3D%20Logo%20Design%20Request&amp;body=Hello%20BR30%20Team,%0A%0AMujhe%203D%20logo%20design%20chahiye.%0A%0APlease%20pricing%20aur%20examples%20share%20karein.%0A%0AThanks." className="hover-btn-link blink-btn" target="_blank" rel="noopener noreferrer" title="3D &amp; Abstract Logo Design Service - BR30 Kart" aria-label="3D Logo Design Service">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=3D%20Logo%20Design%20Request&body=Hello%20BR30%20Team,%0A%0AMujhe%203D%20logo%20design%20chahiye.%0A%0APlease%20pricing%20aur%20examples%20share%20karein.%0A%0AThanks." className="hover-btn-link blink-btn" target="_blank" rel="noopener noreferrer" title="3D &amp; Abstract Logo Design Service - BR30 Kart" aria-label="3D Logo Design Service">
                       💠 Get 3D Design
                     </a>
                   </div>
@@ -717,7 +717,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                     <li>Performance & SEO Optimization</li>
                     <li>Scalable & Clean Codebase</li>
                   </ul>
-                  <a href="mailto:mukeshkumarsingh7488@gmail.com" className="service-btn" target="_blank" rel="noopener noreferrer">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mukeshkumarsingh7488@gmail.com" className="service-btn" target="_blank" rel="noopener noreferrer">
                     📧 Email Me
                   </a>
                 </div>
@@ -968,22 +968,26 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <div className="skill-category">
               <h3>💻 Coding Stack</h3>
+
               <div className="skill-items">
                 <div className="skill-card">
-                  <span>HTML</span>
-                  HTML5
+                  <span>⚛️</span>
+                  React.js
                 </div>
+
                 <div className="skill-card">
-                  <span>CSS</span>
-                  CSS3
-                </div>
-                <div className="skill-card">
-                  <span>JS</span>
+                  <span>🟨</span>
                   JavaScript
                 </div>
+
                 <div className="skill-card">
-                  <span>VS</span>
-                  VS Code
+                  <span>🚀</span>
+                  Node.js
+                </div>
+
+                <div className="skill-card">
+                  <span>🍃</span>
+                  MongoDB
                 </div>
               </div>
             </div>
@@ -1055,21 +1059,23 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             <div className="project-box">
               <h3>Trading Strategy</h3>
               <ul className="project-list">
-                <li>Option Buying</li>
-                <li>Option Selling</li>
-                <li>BTST (Buy Today Sell Tomorrow)</li>
-                <li>Price Action Analysis</li>
-                <li>Scalping Strategy</li>
+                <li>Advance Option Buying</li>
+                <li>Advance Option Selling</li>
+                <li>Advance BTST Mastery</li>
+                <li>Crypto & Forex Pro</li>
+                <li>One Side Momentum</li>
+                <li>Scalping Strategy Pro</li>
               </ul>
             </div>
             <div className="project-box">
-              <h3>Web. Projects</h3>
+              <h3>🚀 Web Projects</h3>
               <ul className="project-list">
                 <li>Course Selling Website</li>
                 <li>Inventory Management System</li>
-                <li>Portfolio Professional Site</li>
+                <li>Professional Portfolio Site</li>
                 <li>Trading Journal Web App</li>
                 <li>E-commerce Dashboard</li>
+                <li>Custom Web Deployment</li>
               </ul>
             </div>
           </div>
@@ -1119,7 +1125,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
           </div>
         </section>
-        <section className="social-section">
+        <section className="social-section" id="social-connect">
           <div className="section-header">
             <h2 className="section-title">
               SOCIAL
@@ -1214,7 +1220,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                 <span>Chat with Support Team</span>
               </div>
             </a>
-            <a href="mailto:support.br30trader@gmail.com?subject=BR30%20Support%20Inquiry&amp;body=Hello%20BR30%20Support%20Team%2C%0A%0AMujhe%20aapki%20services%20ke%20baare%20mein%20jaankari%20chahiye." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Email BR30 Trader Support Team" aria-label="BR30 Trader Support Gmail">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support.br30trader@gmail.com&su=BR30%20Support%20Inquiry&body=Hello%20BR30%20Support%20Team,%0A%0AMujhe%20aapki%20services%20ke%20baare%20mein%20jaankari%20chahiye." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Email BR30 Trader Support Team" aria-label="BR30 Trader Support Gmail">
               <div className="social-icon">
                 <i className="fa-solid fa-envelope"></i>
               </div>
@@ -1223,7 +1229,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                 <span>Contact us Anytime</span>
               </div>
             </a>
-            <a href="mailto:br30service.contact@gmail.com?subject=BR30%20Client%20Service%20Inquiry&amp;body=Hello%20BR30%20Client%20Service%20Team%2C%0A%0AMujhe%20aapki%20services%20ke%20baare%20mein%20jaankari%20chahiye." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Contact BR30 Trader Client Service Team" aria-label="BR30 Trader Client Service Gmail">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=BR30%20Client%20Service%20Inquiry&body=Hello%20BR30%20Client%20Service%20Team%2C%0A%0AMujhe%20aapki%20services%20ke%20baare%20mein%20jaankari%20chahiye." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Contact BR30 Trader Client Service Team" aria-label="BR30 Trader Client Service Gmail">
               <div className="social-icon">
                 <i className="fa-solid fa-envelope"></i>
               </div>
@@ -1232,7 +1238,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                 <span>Contact us Anytime</span>
               </div>
             </a>
-            <a href="mailto:mukeshkumarsingh7488@gmail.com?subject=Mukesh%20Raj%20Admin%20Inquiry&amp;body=Hello%20Mukesh%20Raj%2C%0A%0AMujhe%20aapki%20services%20aur%20business%20related%20jaankari%20ke%20liye%20aapse%20connect%20karna%20tha." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Contact Mukesh Raj Admin Personal Gmail" aria-label="Mukesh Raj Personal Gmail">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mukeshkumarsingh7488@gmail.com&su=Mukesh%20Raj%20Admin%20Inquiry&body=Hello%20Mukesh%20Raj%2C%0A%0AMujhe%20aapki%20services%20aur%20business%20related%20jaankari%20ke%20liye%20aapse%20connect%20karna%20tha." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Contact Mukesh Raj Admin Personal Gmail" aria-label="Mukesh Raj Personal Gmail">
               <div className="social-icon">
                 <i className="fa-solid fa-envelope"></i>
               </div>
@@ -1278,7 +1284,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <div className="about-footer">
               Any Query:
-              <a href="mailto:mukeshkumarsingh7488@gmail.com" className="email-link" target="_blank">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mukeshkumarsingh7488@gmail.com" className="email-link" target="_blank" rel="noopener noreferrer">
                 📧 mukeshkumarsingh7488@gmail.com
               </a>
             </div>
@@ -1293,7 +1299,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               </h2>
               <p className="footer-desc">I'm always open to discussing new projects, trading strategies, or creative ideas.</p>
               <div className="contact-links">
-                <a href="mailto:support.br30trader@gmail.com" className="contact-item" target="_blank" rel="noopener noreferrer" title="Contact BR30 Trader Support Team via Gmail" aria-label="BR30 Trader Support Team Gmail">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support.br30trader@gmail.com" className="contact-item" target="_blank" rel="noopener noreferrer" title="Contact BR30 Trader Support Team via Gmail" aria-label="BR30 Trader Support Team Gmail">
                   <span className="icon">📧</span>
                   <div className="text">
                     <span>Support Team</span>
