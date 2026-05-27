@@ -1053,7 +1053,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
         <section className="project-section" id="projects">
           <h2 className="project-title">
             My
-            <span className="purple"> Projects</span>
+            <span className="purple"> Trading Strategy & Web Projects</span>
           </h2>
           <div className="project-container">
             <div className="project-box">
