@@ -943,7 +943,9 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
           </div>
         </section>
         <section id="skills" className="skills-section">
-          <h2 className="section-title">My Tech & Trading Stack</h2>
+          <h2 className="section-title">
+            <span className="purple">My</span> Tech & Trading Stack
+          </h2>
           <div className="skills-container">
             <div className="skill-category">
               <h3>📈 Trading Tools</h3>
