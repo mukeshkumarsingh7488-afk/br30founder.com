@@ -57,57 +57,67 @@ This portfolio is designed for personal branding, web development services, logo
 
 ### 🏠 Home Page
 
-![Home](screenshots/Home.png.png)
+![Home](screenshots/home.png.png)
 
 ---
 
-### 👨‍💻 Founder Section
+### 👤 About Section
 
-![Founder](screenshots/founder.png.png)
+![About](screenshots/about.png.png)
+
+---
+
+### 👥 Expert Team Section
+
+![Expert Team](screenshots/expart-team.png.png)
 
 ---
 
 ### 💼 Services Section
 
-![Services](screenshots/services.png.png)
+![Services](screenshots/service.png.png)
 
 ---
 
-### 🌐 Web Development
+### 🛠️ Tech Stack Section
 
-![Web Development](screenshots/web-development.png.png)
-
----
-
-### 🎨 Logo Design
-
-![Logo Design](screenshots/logo-design.png.png)
+![Tech Stack](screenshots/tech&stack.png.png)
 
 ---
 
-### 🧠 Branding Section
+### 🧩 Stack Card Section
 
-![Branding](screenshots/branding.png.png)
-
----
-
-### 📂 Projects Section
-
-![Projects](screenshots/projects.png.png)
+![Stack Card](screenshots/stack-card.png.png)
 
 ---
 
-### 📬 Contact Section
+### 🧩 Stack Card 2
 
-![Contact](screenshots/contact.png.png)
+![Stack Card 2](screenshots/stack-card2.png.png)
+
+---
+
+### 📂 Strategy & Project Section
+
+![Strategy Project](screenshots/strategy&project.png.png)
 
 ---
 
-### 🔻 Footer Section
+### 🌐 Network & Connect Section
 
-![Footer](screenshots/footer.png.png)
+![Network Connect](screenshots/network&connect.png.png)
 
 ---
+
+### ⭐ Why Best Section
+
+![Why Best](screenshots/whey-best.png.png)
+
+---
+
+### 📬 Footer Connect Section
+
+![Footer Lets Connect](screenshots/footer-lets-connect.png.png)
 
 ## 🚀 BR30 Ecosystem
 
