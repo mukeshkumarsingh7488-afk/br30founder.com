@@ -1103,14 +1103,20 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <div className="network-card">
               <span className="dot-icon"></span>
+              <a href="https://br-30-kart.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
+                br30kart.com
+              </a>
+            </div>
+            <div className="network-card">
+              <span className="dot-icon"></span>
               <a href="https://my-frontend-eight-roan.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
                 br30Trader.com
               </a>
             </div>
             <div className="network-card">
               <span className="dot-icon"></span>
-              <a href="https://br-30-kart.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
-                br30kart.com
+              <a href="https://br30marketscanner-com-frontade.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
+                br30marketscanner.com
               </a>
             </div>
             <div className="network-card">
@@ -1121,7 +1127,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <div className="network-card">
               <span className="dot-icon"></span>
-              <a href="https://br30algo-com.vercel.app/" className="card-link">
+              <a href="https://br30algo-com.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
                 br30algo.com
               </a>
             </div>
