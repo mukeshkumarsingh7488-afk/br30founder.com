@@ -34,22 +34,96 @@ This portfolio is designed for personal branding, web development services, logo
 
 ### Frontend
 
-- React.js
-- JavaScript
-- HTML5
-- CSS3
-- Vite
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=fff)
+
+---
 
 ### Deployment
 
-- Vercel
-- GitHub
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=fff)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=fff)
+
+---
 
 ### Development Tools
 
-- VS Code
-- Git
-- GitHub
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=fff)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=fff)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=fff)
+
+---
+
+## 📁 Project Structure
+
+```bash
+BR30FOUNDER.COM.F
+│
+├── Burner/
+│
+├── dist/
+│   └── assets/
+│
+├── images/
+│
+├── public/
+│   ├── js/
+│   │   └── script.js
+│   ├── robots.txt
+│   └── sitemap.xml
+│
+├── screenshots/
+│
+├── src/
+│   │
+│   ├── components/
+│   │   ├── ScrollToTop.jsx
+│   │   └── SiteLayout.jsx
+│   │
+│   ├── pages/
+│   │   ├── BosChoch.jsx
+│   │   ├── BrokerSetup.jsx
+│   │   ├── ChartingTools.jsx
+│   │   ├── Customlogo.jsx
+│   │   ├── EntryConfirmation.jsx
+│   │   ├── FairValueGaps.jsx
+│   │   ├── FomoControll.jsx
+│   │   ├── Home.jsx
+│   │   ├── IndicatorSetup.jsx
+│   │   ├── KillZones.jsx
+│   │   ├── Learn.jsx
+│   │   ├── LiquidityGrabs.jsx
+│   │   ├── LossRecovery.jsx
+│   │   ├── Masterclass.jsx
+│   │   ├── MultiTimeframe.jsx
+│   │   ├── NewsTerminals.jsx
+│   │   ├── OrderBlocks.jsx
+│   │   ├── PatiencePower.jsx
+│   │   ├── PoiAnalysis.jsx
+│   │   ├── PositionSizing.jsx
+│   │   ├── RiskRewardRatio.jsx
+│   │   ├── StopLossDiscipline.jsx
+│   │   ├── TradeJournaling.jsx
+│   │   ├── TradingAnalysis.jsx
+│   │   ├── TradingDiscipline.jsx
+│   │   └── WebService.jsx
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .env
+├── .gitignore
+├── .prettierrc
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── vercel.json
+└── vite.config.js
+```
 
 ---
 
@@ -123,11 +197,16 @@ This portfolio is designed for personal branding, web development services, logo
 
 This portfolio is part of the BR30 ecosystem:
 
-- BR30 Group
-- BR30 Trader
-- BR30 Kart
-- BR30 Algo
-- BR30 Founder
+| Project                | Live Demo                                                           |
+| ---------------------- | ------------------------------------------------------------------- |
+| 🌐 BR30 Group          | [Visit Website](https://br-30-group-com.vercel.app/)                |
+| 🚀 BR30 Trader         | [Visit Website](https://my-frontend-eight-roan.vercel.app/)         |
+| 🛒 BR30 Kart           | [Visit Website](https://br-30-kart.vercel.app/)                     |
+| 📈 BR30 Algo           | [Visit Website](https://br30algo-com.vercel.app/)                   |
+| 📊 BR30 Market Scanner | [Visit Website](https://br30marketscanner-com-frontade.vercel.app/) |
+| 👨‍💻 BR30 Founder        | [Visit Website](https://br30-com.vercel.app/)                       |
+
+---
 
 ---
 
@@ -140,11 +219,17 @@ Founder — **BR30 Group**
 
 ## 📬 Connect With Me
 
-- [LinkedIn](https://www.linkedin.com/in/mukeshraj-br30/)
-- [GitHub](https://github.com/mukeshkumarsingh7488-afk)
-- [Instagram](https://www.instagram.com/br30Traderofficial)
-- [YouTube](https://www.youtube.com/@br30traderofficial)
-- [Telegram](https://t.me/+hBAT4kWo63A4ZWY1)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mukesh_Raj-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mukeshraj-br30/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-mukeshkumarsingh7488--afk-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mukeshkumarsingh7488-afk)
+
+[![Instagram](https://img.shields.io/badge/Instagram-BR30TraderOfficial-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/br30Traderofficial)
+
+[![YouTube](https://img.shields.io/badge/YouTube-BR30TraderOfficial-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@br30traderofficial)
+
+[![Telegram](https://img.shields.io/badge/Telegram-BR30_Community-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+hBAT4kWo63A4ZWY1)
+
+---
 
 ---
 
