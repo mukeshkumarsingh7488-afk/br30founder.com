@@ -1035,6 +1035,14 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               </Link>
             </div>
             <div className="service-box">
+              <div className="service-icon">📈</div>
+              <h3>Custom Trading Indicators</h3>
+              <p>TradingView के लिए Custom Indicators, Buy/Sell Signal Systems, Scalping Indicators, Smart Money Concepts (SMC), Automated Strategies और Professional Pine Script Development Services।</p>
+              <Link to="/custom-indicator" className="service-btn" rel="noopener noreferrer">
+                Explore Indicator Services
+              </Link>
+            </div>
+            <div className="service-box">
               <div className="service-icon">💻</div>
               <h3>Web. Services</h3>
               <p>प्रोफेशनल ट्रेडिंग डैशबोर्ड, ई-कॉमर्स और बिज़नेस वेबसाइट्स का कस्टमाइज्ड डेवलपमेंट।</p>

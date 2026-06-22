@@ -27,6 +27,7 @@ import TradingAnalysis from "./pages/TradingAnalysis.jsx";
 import TradingDiscipline from "./pages/TradingDiscipline.jsx";
 import WebService from "./pages/WebService.jsx";
 import Customlogo from "./pages/Customlogo.jsx";
+import CustomIndicator from "./pages/CustomIndicator";
 
 export default function App() {
   return (
@@ -59,6 +60,7 @@ export default function App() {
           <Route path="/trading-discipline" element={<TradingDiscipline />} />
           <Route path="/web-service" element={<WebService />} />
           <Route path="/custom-logo" element={<Customlogo />} />
+          <Route path="/custom-indicator" element={<CustomIndicator />} />
         </Route>
       </Routes>
     </BrowserRouter>
