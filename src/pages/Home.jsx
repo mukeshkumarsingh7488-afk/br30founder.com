@@ -1274,7 +1274,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <h2 className="about-intro">
               Hey I'm
-              <span className="highlight"> Mukesh</span>, a passionate Trader with a strong focus on the financial markets.
+              <span className="highlight"> Mukesh Raj</span>, a passionate Trader with a strong focus on the financial markets.
             </h2>
             <div className="about-details">
               <p>
@@ -1339,7 +1339,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               </div>
             </div>
             <div className="footer-bottom">
-              <p>© 2024 Mukesh | Built with Passion</p>
+              <p>© 2024 Mukesh Raj | Built with Passion</p>
             </div>
           </div>
         </footer>
