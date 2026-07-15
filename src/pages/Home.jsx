@@ -48,7 +48,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             <i className="fas fa-caret-down"></i>
           </div>
           <nav id="navLinks">
-            <a href="#home-section">Home</a>
+            <a href="#home">Home</a>
             <a href="#service">Service</a>
             <a href="#social-connect">Connect</a>
             <a href="#team">Our Team</a>
@@ -61,7 +61,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
         <div className="progress-container">
           <div className="progress-bar" id="myBar"></div>
         </div>
-        <section id="home-section" className="hero-main">
+        <section id="home" className="hero-main">
           <div className="hero-content">
             <div className="video-text">
               Hey, My Name is
@@ -1129,7 +1129,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <div className="network-card">
               <span className="dot-icon"></span>
-              <a href="#home-section" className="card-link">
+              <a href="#home" className="card-link">
                 br30founder.com
               </a>
             </div>
