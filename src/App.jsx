@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SiteLayout from "./components/SiteLayout.jsx";
 import Home from "./pages/Home.jsx";
-import Landing from "./pages/Landing.jsx";
 import BosChoch from "./pages/BosChoch.jsx";
 import BrokerSetup from "./pages/BrokerSetup.jsx";
 import ChartingTools from "./pages/ChartingTools.jsx";
@@ -35,7 +34,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<SiteLayout />}>
-          <Route path="/" element={<Landing />} />
+          <Route index element={<Home />} />
           <Route path="/portfolio" element={<Home />} />
           <Route path="/BOS-CHoCH" element={<BosChoch />} />
           <Route path="/broker-setup" element={<BrokerSetup />} />
