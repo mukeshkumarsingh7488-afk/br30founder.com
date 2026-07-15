@@ -50,7 +50,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
           <nav id="navLinks">
             <a href="#home">Home</a>
             <a href="#service">Service</a>
-            <a href="#social-connect">Connect</a>
+            <a href="#connect">Connect</a>
             <a href="#team">Our Team</a>
             <a href="#projects">Projects</a>
             <a href="#browse">Browse</a>
@@ -1141,7 +1141,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
           </div>
         </section>
-        <section className="social-section" id="social-connect">
+        <section className="social-section" id="connect">
           <div className="section-header">
             <h2 className="section-title">
               SOCIAL
