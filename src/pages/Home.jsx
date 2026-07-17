@@ -37,7 +37,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
         <div id="myBar"></div>
         <header className="main-header">
           <div className="logo-title">
-            <img src="https://i.ibb.co/KxnQc4gx/BR30-LOGO1.png" alt="BR30 Group Official Logo - Mukesh Raj" className="logo" style={{ width: "45px", height: "45px", borderRadius: "8px" }} />
+            <img src="https://res.cloudinary.com/dw4imlekm/image/upload/v1781813427/profile_pics/6a3448ddd7e9095466ce453a.png" alt="BR30 Group Official Logo - Mukesh Raj" className="logo" style={{ width: "45px", height: "45px", borderRadius: "8px" }} />
             <h1>
               <span className="purple">BR30</span>
               founder.com
