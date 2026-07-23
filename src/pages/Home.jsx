@@ -1099,7 +1099,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             <div className="header-underline"></div>
             <p className="section-subtitle">
               <span className="purple">BR30 </span>
-              Group की सभी वेबसाइट्स और सर्विसेज को यहाँ एक्सप्लोर करें।
+              Group की सभी वेबसाइट्स और सर्विसेज़ को यहाँ एक्सप्लोर करें। <strong>(Currently Under Development)</strong>
             </p>
           </div>
           <div className="network-grid">
