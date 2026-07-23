@@ -34,7 +34,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<SiteLayout />}>
-          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Home />} />
           <Route path="/BOS-CHoCH" element={<BosChoch />} />
           <Route path="/broker-setup" element={<BrokerSetup />} />
