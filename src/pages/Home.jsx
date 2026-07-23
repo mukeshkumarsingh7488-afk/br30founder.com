@@ -1129,8 +1129,8 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <div className="network-card">
               <span className="dot-icon"></span>
-              <a href="#home" className="card-link">
-                br30founder.com
+              <a href="https://br30-algo-terminal-f.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
+                br30algoterminal.com
               </a>
             </div>
             <div className="network-card">
@@ -1141,8 +1141,20 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <div className="network-card">
               <span className="dot-icon"></span>
+              <a href="https://br-30-food-os-f.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
+                br30foodos.com
+              </a>
+            </div>
+            <div className="network-card">
+              <span className="dot-icon"></span>
               <a href="https://br-30-qr-studio-xi.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
                 br30qrstudio.com
+              </a>
+            </div>
+            <div className="network-card">
+              <span className="dot-icon"></span>
+              <a href="#home" className="card-link">
+                br30founder.com
               </a>
             </div>
           </div>
