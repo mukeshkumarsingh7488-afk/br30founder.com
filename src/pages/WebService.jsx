@@ -1,5 +1,4 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
 
 export default function WebService() {
   return (
@@ -7,9 +6,9 @@ export default function WebService() {
       <style>{`:root{--bg-color:#0b0118;--card-bg:#160a2c;--accent-purple:#a020f0;--text-white:#ffffff;--text-dim:#b2bec3;--border-color:rgba(160,32,240,.2);}*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}body{background:var(--bg-color);color:var(--text-white);line-height:1.7;padding:20px;}.container{max-width:900px;margin:0 auto;}.back-link{text-decoration:none;color:var(--accent-purple);font-weight:500;display:inline-block;margin-bottom:25px;transition:.3s ease;}.back-link:hover{color:white;text-shadow:0 0 10px var(--accent-purple);transform:translateX(-5px);}.header{text-align:center;margin-bottom:50px;}.header h1{font-size:clamp(1.8rem,5vw,2.5rem);color:#fff;}.header h1 span{color:var(--accent-purple);}.line{width:60px;height:4px;background:var(--accent-purple);margin:15px auto;border-radius:10px;box-shadow:0 0 10px var(--accent-purple);}.service-card{background:var(--card-bg);padding:clamp(25px,5vw,45px);border-radius:24px;border:1px solid var(--border-color);box-shadow:0 15px 35px rgba(0,0,0,.4);}.service-card h2{color:var(--accent-purple);margin-bottom:20px;font-size:clamp(1.3rem,3vw,1.6rem);}.service-card p{color:var(--text-dim);margin-bottom:25px;font-size:1rem;}.feature-box{background:rgba(160,32,240,.05);padding:25px;border-radius:15px;margin:35px 0;border-left:5px solid var(--accent-purple);border-right:1px solid var(--border-color);border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color);}.feature-box h3{margin-bottom:15px;font-size:1.1rem;color:var(--text-white);}.feature-box ul{list-style:none;}.feature-box ul li{margin-bottom:12px;padding-left:30px;position:relative;color:#efefef;font-size:.95rem;}.feature-box ul li::before{content:"🚀";position:absolute;left:0;filter:drop-shadow(0 0 5px var(--accent-purple));}.cta-box{text-align:center;margin-top:40px;}.contact-btn{text-decoration:none;background:var(--accent-purple);color:#fff;padding:16px 45px;border-radius:12px;font-weight:700;display:inline-block;transition:all .4s cubic-bezier(.175,.885,.32,1.275);box-shadow:0 10px 20px rgba(160,32,240,.2);border:2px solid transparent;}.contact-btn:hover{background:transparent!important;color:white!important;border-color:var(--accent-purple)!important;box-shadow:0 0 25px rgba(160,32,240,.6)!important;transform:scale(1.05) translateY(-3px)!important;}@media(min-width:768px){body{padding:50px 20px;}}`}</style>
       <main className="page page-web-service">
         <div className="container">
-          <HashLink smooth to="/#service" className="back-btn">
-            ← Back To Home
-          </HashLink>
+          <a href="/" className="back-link">
+            ← Back to Home
+          </a>
           <header className="header">
             <h1>
               Building Your
