@@ -65,7 +65,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
           <div className="hero-content">
             <div className="video-text">
               Hey, My Name is
-              <span className="purple">Mukesh</span>
+              <span className="purple"> Mukesh</span>
               <div className="sub-text">and I am a passionate.</div>
               <span id="element"></span>
               <p className="hero-tagline">
@@ -956,7 +956,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                 </div>
                 <div className="skill-card">
                   <span>📉</span>
-                  Fyers/Dhan
+                  Fyers / Dhan / Delta Exchange
                 </div>
                 <div className="skill-card">
                   <span>🧠</span>
@@ -964,7 +964,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                 </div>
                 <div className="skill-card">
                   <span>🛡️</span>
-                  Risk Mgmt
+                  Risk Management
                 </div>
               </div>
             </div>
@@ -984,7 +984,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
 
                 <div className="skill-card">
                   <span>🚀</span>
-                  Node.js
+                  Node.js / Express.js
                 </div>
 
                 <div className="skill-card">
@@ -1023,7 +1023,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               My
               <span> Services</span>
             </h2>
-            <p>What We Offer to Our Clients</p>
+            <p>What I Offer to My Clients</p>
           </div>
           <div className="services-container">
             <div className="service-box">
