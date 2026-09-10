@@ -1023,7 +1023,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               My
               <span> Services</span>
             </h2>
-            <p>What I offer to my clients</p>
+            <p>What We Offer to Our Clients</p>
           </div>
           <div className="services-container">
             <div className="service-box">
@@ -1357,7 +1357,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               </div>
             </div>
             <div className="footer-bottom">
-              <p>© 2024 Mukesh Raj | Built with Passion</p>
+              <p>© 2026 Mukesh Raj | Built with Passion & Code</p>
             </div>
           </div>
         </footer>
