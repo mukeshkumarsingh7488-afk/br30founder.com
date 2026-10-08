@@ -238,9 +238,9 @@ Founder — **BR30 Group**
 
 ### 📧 Contact
 
-[![Support Team](https://img.shields.io/badge/📧_Support_Team-Contact_Now-D14836?style=for-the-badge)](https://mail.google.com/mail/?view=cm&fs=1&to=support.br30trader@gmail.com)
+[![Support Team](https://img.shields.io/badge/🛠️_Support_Team-Submit_Request-D14836?style=for-the-badge)](https://br30crm-com-f.vercel.app/public/forms/6ac4a4ce8ab8658ebe3748f7/br30-group-service-request?utm_source=br30-group-web&utm_medium=website&lead_source=br30-group-web&form_id=6ac702676ca9142e6f794ca2&source_id=6ac702c56ca9142e6f794cab)
 
-[![Service Team](https://img.shields.io/badge/📨_Service_Team-Contact_Now-B71C1C?style=for-the-badge)](https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com)
+[![Service Team](https://img.shields.io/badge/🛠️_Service_Team-Submit_Request-B71C1C?style=for-the-badge)](https://br30crm-com-f.vercel.app/public/forms/6ac4a4ce8ab8658ebe3748f7/br30-group-service-request?utm_source=br30-group-web&utm_medium=website&lead_source=br30-group-web&form_id=6ac702676ca9142e6f794ca2&source_id=6ac702c56ca9142e6f794cab)
 
 ### 🚀 BR30 Ecosystem
 

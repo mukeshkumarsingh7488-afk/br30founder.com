@@ -192,11 +192,11 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <img src="/images/gmail.jpg" alt="Support Email" />
                     </div>
                     <div className="box-content">
-                      <h4>📧 Support Email</h4>
-                      <p>Facing any issue? Reach out and get fast professional help.</p>
+                      <h4>🛠️ Support & Service</h4>
+                      <p>Need help or have a service request? Submit your request and our team will assist you.</p>
                     </div>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support.br30trader@gmail.com&su=Support%20Request&body=Hello%20BR30%20Support%20Team,%0A%0AMujhe%20help%20chahiye..." target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Email BR30 Trader Support Team" aria-label="BR30 Trader Support Email">
-                      ✉ Contact Support
+                    <a href="https://br30crm-com-f.vercel.app/public/forms/6ac4a4ce8ab8658ebe3748f7/br30-group-service-request?utm_source=br30-group-web&utm_medium=website&lead_source=br30-group-web&form_id=6ac702676ca9142e6f794ca2&source_id=6ac702c56ca9142e6f794cab" target="_blank" rel="noopener noreferrer" className="hover-btn-link" title="Submit BR30 Support & Service Request" aria-label="BR30 Support and Service Request">
+                      🛠️ Submit Support Request
                     </a>
                   </div>
                   <div className="sub-box">
@@ -216,11 +216,11 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                       <img src="/images/phone.jpg" alt="Call Support" />
                     </div>
                     <div className="box-content">
-                      <h4>📞 Call Support (10AM – 6PM)</h4>
-                      <p>Direct call support for course enrollment, technical issues, or web services. (Please call only for urgent queries; avoid unnecessary calls.)</p>
+                      <h4>📞 Call Support</h4>
+                      <p>Direct call support for course enrollment, technical issues, or web services will be available soon.</p>
                     </div>
-                    <a href="tel:+916200986380" className="hover-btn-link" title="Call BR30 Trader Support Team" aria-label="Call BR30 Trader Support">
-                      📲 Call Now
+                    <a href="#" className="hover-btn-link" title="Call Support Coming Soon" aria-label="Call Support Coming Soon" onClick={(e) => e.preventDefault()}>
+                      📲 Coming Soon
                     </a>
                   </div>
                 </div>
@@ -1121,6 +1121,12 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             </div>
             <div className="network-card">
               <span className="dot-icon"></span>
+              <a href="https://br30crm-com-f.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
+                BR30 CRM
+              </a>
+            </div>
+            <div className="network-card">
+              <span className="dot-icon"></span>
               <a href="https://br-30-kart.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
                 br30kart.com
               </a>
@@ -1255,31 +1261,31 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                 <span>Connect with Us</span>
               </div>
             </a>
-            <a href="https://wa.me/916200986380?text=Hello%20BR30%20Support%20Team%2C%20mujhe%20aapki%20services%20ke%20baare%20mein%20jaankari%20chahiye." className="social-card whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with BR30 Trader Support Team on WhatsApp" aria-label="BR30 Trader WhatsApp Support">
+            <a href="https://br30crm-com-f.vercel.app/public/forms/6ac4a4ce8ab8658ebe3748f7/br30-group-service-request?utm_source=br30-group-web&utm_medium=website&lead_source=br30-group-web&form_id=6ac702676ca9142e6f794ca2&source_id=6ac702c56ca9142e6f794cab" className="social-card whatsapp" target="_blank" rel="noopener noreferrer" title="Submit BR30 Support & Service Request" aria-label="BR30 Support and Service Request">
               <div className="social-icon">
-                <i className="fa-brands fa-whatsapp"></i>
+                <i className="fa-solid fa-headset"></i>
               </div>
               <div className="social-info">
-                <strong>WhatsApp</strong>
-                <span>Chat with Support Team</span>
+                <strong>Support & Service</strong>
+                <span>Submit a Support Request</span>
               </div>
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support.br30trader@gmail.com&su=BR30%20Support%20Inquiry&body=Hello%20BR30%20Support%20Team,%0A%0AMujhe%20aapki%20services%20ke%20baare%20mein%20jaankari%20chahiye." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Email BR30 Trader Support Team" aria-label="BR30 Trader Support Gmail">
+            <a href="https://br30crm-com-f.vercel.app/public/forms/6ac4a4ce8ab8658ebe3748f7/br30-group-service-request?utm_source=br30-group-web&utm_medium=website&lead_source=br30-group-web&form_id=6ac702676ca9142e6f794ca2&source_id=6ac702c56ca9142e6f794cab" className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Submit BR30 Support & Service Request" aria-label="BR30 Support and Service Request">
               <div className="social-icon">
                 <i className="fa-solid fa-envelope"></i>
               </div>
               <div className="social-info">
-                <strong>Support team Gmail</strong>
+                <strong>Support & Service Request</strong>
                 <span>Contact us Anytime</span>
               </div>
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=br30service.contact@gmail.com&su=BR30%20Client%20Service%20Inquiry&body=Hello%20BR30%20Client%20Service%20Team%2C%0A%0AMujhe%20aapki%20services%20ke%20baare%20mein%20jaankari%20chahiye." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Contact BR30 Trader Client Service Team" aria-label="BR30 Trader Client Service Gmail">
+            <a href="https://br30crm-com-f.vercel.app/public/forms/6ac4a4ce8ab8658ebe3748f7/br30-group-service-request?utm_source=br30-group-web&utm_medium=website&lead_source=br30-group-web&form_id=6ac702676ca9142e6f794ca2&source_id=6ac702c56ca9142e6f794cab" className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Submit BR30 Client Service Request" aria-label="BR30 Client Service Request">
               <div className="social-icon">
-                <i className="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-headset"></i>
               </div>
               <div className="social-info">
-                <strong>Client Service Gmail</strong>
-                <span>Contact us Anytime</span>
+                <strong>Client Service Request</strong>
+                <span>Submit your service request</span>
               </div>
             </a>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mukeshkumarsingh7488@gmail.com&su=Mukesh%20Raj%20Admin%20Inquiry&body=Hello%20Mukesh%20Raj%2C%0A%0AMujhe%20aapki%20services%20aur%20business%20related%20jaankari%20ke%20liye%20aapse%20connect%20karna%20tha." className="social-card gmail" target="_blank" rel="noopener noreferrer" title="Contact Mukesh Raj Admin Personal Gmail" aria-label="Mukesh Raj Personal Gmail">
@@ -1343,11 +1349,11 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
               </h2>
               <p className="footer-desc">I'm always open to discussing new projects, trading strategies, or creative ideas.</p>
               <div className="contact-links">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support.br30trader@gmail.com" className="contact-item" target="_blank" rel="noopener noreferrer" title="Contact BR30 Trader Support Team via Gmail" aria-label="BR30 Trader Support Team Gmail">
-                  <span className="icon">📧</span>
+                <a href="https://br30crm-com-f.vercel.app/public/forms/6ac4a4ce8ab8658ebe3748f7/br30-group-service-request?utm_source=br30-group-web&utm_medium=website&lead_source=br30-group-web&form_id=6ac702676ca9142e6f794ca2&source_id=6ac702c56ca9142e6f794cab" className="contact-item" target="_blank" rel="noopener noreferrer" title="Submit BR30 Support & Service Request" aria-label="BR30 Support and Service Request">
+                  <span className="icon">🛠️</span>
                   <div className="text">
-                    <span>Support Team</span>
-                    <strong>support.br30trader@gmail.com</strong>
+                    <span>Support & Service</span>
+                    <strong>Submit a Support Request</strong>
                   </div>
                 </a>
                 <a href="https://chat.whatsapp.com/ERgQUcY4M3lGU4GNeqhoRb?mode=gi_t" target="_blank" className="contact-item" rel="noopener noreferrer" title="Join BR30Trader Official WhatsApp Community" aria-label="BR30Trader Official WhatsApp Group">
