@@ -17,9 +17,7 @@ window.typedInstance = new Typed("#element", {
     "Graphic Designer.",
     "Market Analyst.",
       "Algo Developer.",
-    "Trading Entrepreneur.",
-    "Fintech Entrepreneur.",
-    "Trading Indicator Developer."
+
   ],
   typeSpeed: 70,
   backSpeed: 40,
