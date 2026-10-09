@@ -9,16 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
   if (typedEl && window.Typed) {
     typedEl.innerHTML = "";
 
-    window.typedInstance = new Typed("#element", {
-      strings: ["Web. Developer.", "Trader.", "Investor.", "Graphic Designer.", "Content Creator."],
-      typeSpeed: 70,
-      backSpeed: 40,
-      backDelay: 1200,
-      loop: true,
-      showCursor: true,
-      cursorChar: "|",
-    });
-  }
+window.typedInstance = new Typed("#element", {
+  strings: [
+    "Web Developer.",
+    "Trader.",
+    "Investor.",
+    "Graphic Designer.",
+    "Market Analyst.",
+      "Algo Developer.",
+    "Trading Entrepreneur.",
+    "Fintech Entrepreneur.",
+    "Trading Indicator Developer."
+  ],
+  typeSpeed: 70,
+  backSpeed: 40,
+  backDelay: 1200,
+  loop: true,
+  showCursor: true,
+  cursorChar: "|",
 });
 
 const dot = document.querySelector(".cursor-dot");
