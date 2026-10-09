@@ -100,7 +100,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                 </div>
         
 <div className="image-bg-glow"></div>
-<img src="/favicon-32x32.png" alt="brand logo" />
+<img src="/images/BR30™ LOGO.png" alt="brand logo" />
 <div className="photo-name">MUKESH RAJ</div>
 
               </div>
