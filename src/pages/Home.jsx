@@ -99,7 +99,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
                   </span>
                 </div>
                 <div className="image-bg-glow"></div>
-                <img src="/images/BR30™ LOGO.png" alt="Mukesh Professional Photo" />
+                <img src="/public/android-chrome-512x512.png" alt="Brand logo" />
                 <div className="photo-name">MUKESH RAJ</div>
               </div>
             </div>
