@@ -12,23 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
     typedEl.innerHTML = "";
 
     window.typedInstance = new Typed("#element", {
-      strings: [
-        "Web Developer.",
-        "Trader.",
-        "Investor.",
-        "Graphic Designer.",
-        "Market Analyst.",
-        "Algo Developer.",
-        "Trading Entrepreneur.",
-        "Fintech Entrepreneur.",
-        "Trading Indicator Developer."
-      ],
+      strings: ["Web. Developer.", "Trader.", "Investor.", "Graphic Designer.", "Content Creator."],
       typeSpeed: 70,
       backSpeed: 40,
       backDelay: 1200,
       loop: true,
       showCursor: true,
-      cursorChar: "|"
+      cursorChar: "|",
     });
   }
 
@@ -47,35 +37,30 @@ document.addEventListener("DOMContentLoaded", () => {
       outline.animate(
         {
           left: `${posX}px`,
-          top: `${posY}px`
+          top: `${posY}px`,
         },
-        { duration: 500, fill: "forwards" }
+        { duration: 500, fill: "forwards" },
       );
     });
 
-    document
-      .querySelectorAll("a, .card, .contact-btn, .indicator-item")
-      .forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          outline.style.transform = "translate(-50%, -50%) scale(1.5)";
-          outline.style.backgroundColor = "rgba(160, 32, 240, 0.1)";
-        });
-
-        link.addEventListener("mouseleave", () => {
-          outline.style.transform = "translate(-50%, -50%) scale(1)";
-          outline.style.backgroundColor = "transparent";
-        });
+    document.querySelectorAll("a, .card, .contact-btn, .indicator-item").forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        outline.style.transform = "translate(-50%, -50%) scale(1.5)";
+        outline.style.backgroundColor = "rgba(160, 32, 240, 0.1)";
       });
+
+      link.addEventListener("mouseleave", () => {
+        outline.style.transform = "translate(-50%, -50%) scale(1)";
+        outline.style.backgroundColor = "transparent";
+      });
+    });
   }
 
   // Scroll progress
   window.onscroll = function () {
-    const winScroll =
-      document.documentElement.scrollTop || document.body.scrollTop;
+    const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-    const height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
     const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
     const progressBar = document.getElementById("scroll-progress");
@@ -116,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         pin: true,
         pinSpacing: false,
         scrub: 1,
-        anticipatePin: 1
+        anticipatePin: 1,
       });
 
       if (index < cards.length - 1) {
@@ -125,11 +110,11 @@ document.addEventListener("DOMContentLoaded", () => {
             trigger: cards[index + 1],
             start: `top-=${headerOffset + 150} top`,
             end: `top-=${headerOffset} top`,
-            scrub: 1
+            scrub: 1,
           },
           opacity: 0,
           scale: 0.98,
-          ease: "none"
+          ease: "none",
         });
       }
     });
@@ -151,9 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const targetCard = document.querySelector(hash);
 
           if (targetCard) {
-            const targetST = ScrollTrigger.getAll().find(
-              (st) => st.trigger === targetCard
-            );
+            const targetST = ScrollTrigger.getAll().find((st) => st.trigger === targetCard);
 
             if (targetST) {
               const extraScroll = 190;
@@ -161,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
               window.scrollTo({
                 top: targetST.start + extraScroll - offset,
-                behavior: "auto"
+                behavior: "auto",
               });
             }
           }
