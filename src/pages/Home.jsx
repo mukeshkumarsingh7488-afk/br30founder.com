@@ -1134,7 +1134,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             <div className="network-card">
               <span className="dot-icon"></span>
               <a href="https://my-frontend-eight-roan.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">
-                br30Trader.com
+                br30trader.com
               </a>
             </div>
             <div className="network-card">
@@ -1164,7 +1164,7 @@ html,body{max-width:100%;overflow-x:hidden;position:relative;padding-top:70px}ht
             <div className="network-card">
               <span className="dot-icon"></span>
               <a href="https://br-30-group-com.vercel.app/services" target="_blank" rel="noopener noreferrer" className="card-link">
-                br30groupservices.com
+                br30services.com
               </a>
             </div>
             <div className="network-card">
