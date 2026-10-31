@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     typedEl.innerHTML = "";
 
     window.typedInstance = new Typed("#element", {
-      strings: ["Web Developer.", "Trader.", "Investor.", "Graphic Designer.", "Market Analyst.", "Algo Developer.", "Trading Entrepreneur.", "Fintech Entrepreneur.", "Trading Indicator Developer."],
+      strings: ["Trader.", "Investor.", "Content Creator.", "Web Developer.", "Graphic Designer.", "Market Analyst.", "Algo Developer.", "Trading Entrepreneur.", "Fintech Entrepreneur.", "Trading Indicator Developer."],
       typeSpeed: 70,
       backSpeed: 40,
       backDelay: 1200,
